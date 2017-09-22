@@ -88,7 +88,6 @@ Configuration_OAuthClientSecret = "Configuration_OAuthClientSecret"; // OAuth 2 
 ## <a name="list_of_controllers"></a>List of Controllers
 
 * [MessagingController](#messaging_controller)
-* [OAuthAuthorizationController](#o_auth_authorization_controller)
 
 ## <a name="messaging_controller"></a>![Class: ](https://apidocs.io/img/class.png ".MessagingController") MessagingController
 
@@ -329,65 +328,6 @@ where x is a digit |
 | 501 | The HTTP method being used has not yet been implemented for<br>the requested resource |
 | 503 | The service requested is currently unavailable |
 | 0 | An internal error occurred when processing the request |
-
-
-
-[Back to List of Controllers](#list_of_controllers)
-
-## <a name="o_auth_authorization_controller"></a>![Class: ](https://apidocs.io/img/class.png ".OAuthAuthorizationController") OAuthAuthorizationController
-
-### Get singleton instance
-```objc
-OAuthAuthorization* oAuthAuthorization = [[OAuthAuthorization alloc]init] ;
-```
-
-### <a name="create_request_token_async_with_authorization"></a>![Method: ](https://apidocs.io/img/method.png ".OAuthAuthorizationController.createRequestTokenAsyncWithAuthorization") createRequestTokenAsyncWithAuthorization
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-
-```objc
-function createRequestTokenAsyncWithAuthorization:(NSString*) authorization
-                scope:(NSString*) scope
-                fieldParameters:(NSDictionary*) fieldParameters
-                completionBlock:(CompletedPostRequestToken) onCompleted(authorization scope : scope  formParameters : formParams)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| authorization |  ``` Required ```  | Authorization header in Basic auth format |
-| scope |  ``` Optional ```  | Requested scopes as a space-delimited list. |
-| fieldParameters | ``` Optional ``` | Additional optional form parameters are supported by this method |
-
-
-
-
-
-#### Example Usage
-
-```objc
-    // Parameters for the API call
-    NSString* authorization = @"Authorization";
-    NSString* scope = @"scope";
-    // Dictionary for optional form parameters
-    NSMutableDictionary* formParamsMutable = [[NSMutableDictionary alloc] init];
-    NSDictionary *formParams= [formParamsMutable copy];
-
-    [self.oAuthAuthorization createRequestTokenAsyncWithAuthorization: authorization scope : scope  formParameters : formParams  completionBlock:^(BOOL success, HttpContext* context, OAuthToken* response, NSError* error) { 
-       //Add code here
-    }];
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 400 | OAuth 2 provider returned an error. |
-| 401 | OAuth 2 provider says client authentication failed. |
 
 
 

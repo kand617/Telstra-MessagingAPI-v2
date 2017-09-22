@@ -357,7 +357,6 @@ app.controller('oauthClientController', function($scope, OAuthManager, Configura
 ## <a name="list_of_controllers"></a>List of Controllers
 
 * [MessagingController](#messaging_controller)
-* [OAuthAuthorizationController](#o_auth_authorization_controller)
 
 ## <a name="messaging_controller"></a>![Class: ](https://apidocs.io/img/class.png ".MessagingController") MessagingController
 
@@ -644,129 +643,6 @@ where x is a digit |
 | 501 | The HTTP method being used has not yet been implemented for<br>the requested resource |
 | 503 | The service requested is currently unavailable |
 | 0 | An internal error occurred when processing the request |
-
-
-
-
-[Back to List of Controllers](#list_of_controllers)
-
-## <a name="o_auth_authorization_controller"></a>![Class: ](https://apidocs.io/img/class.png ".OAuthAuthorizationController") OAuthAuthorizationController
-
-### Get singleton instance
-
-The singleton instance of the ``` OAuthAuthorizationController ``` class can be accessed via Dependency Injection.
-
-```js
-	app.controller("testController", function($scope, OAuthAuthorizationController, OAuthToken){
-	});
-```
-
-### <a name="create_request_token"></a>![Method: ](https://apidocs.io/img/method.png ".OAuthAuthorizationController.createRequestToken") createRequestToken
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-
-```javascript
-function createRequestToken(authorization, scope, formParams)
-```
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| authorization |  ``` Required ```  | Authorization header in Basic auth format |
-| scope |  ``` Optional ```  | Requested scopes as a space-delimited list. |
-| fieldParameters | ``` Optional ``` | Additional optional form parameters are supported by this method |
-
-
-
-#### Example Usage
-
-```javascript
-
-
-	app.controller("testController", function($scope, OAuthAuthorizationController, OAuthToken){
-        var authorization = 'Authorization';
-        var scope = 'scope';
-    // key-value map for optional form parameters
-    var formParams = [];
-
-
-		var result = OAuthAuthorizationController.createRequestToken(authorization, scope, formParams);
-        //Function call returns a promise
-        result.then(function(success){
-			//success case
-			//getting context of response
-			console.log(success.getContext());
-		},function(err){
-			//failure case
-		});
-
-	});
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 400 | OAuth 2 provider returned an error. |
-| 401 | OAuth 2 provider says client authentication failed. |
-
-
-
-
-### <a name="create_request_token"></a>![Method: ](https://apidocs.io/img/method.png ".OAuthAuthorizationController.createRequestToken") createRequestToken
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-
-```javascript
-function createRequestToken(authorization, scope, formParams)
-```
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| authorization |  ``` Required ```  | Authorization header in Basic auth format |
-| scope |  ``` Optional ```  | Requested scopes as a space-delimited list. |
-| fieldParameters | ``` Optional ``` | Additional optional form parameters are supported by this method |
-
-
-
-#### Example Usage
-
-```javascript
-
-
-	app.controller("testController", function($scope, OAuthAuthorizationController, OAuthToken){
-        var authorization = 'Authorization';
-        var scope = 'scope';
-    // key-value map for optional form parameters
-    var formParams = [];
-
-
-		var result = OAuthAuthorizationController.createRequestToken(authorization, scope, formParams);
-        //Function call returns a promise
-        result.then(function(success){
-			//success case
-			//getting context of response
-			console.log(success.getContext());
-		},function(err){
-			//failure case
-		});
-
-	});
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 400 | OAuth 2 provider returned an error. |
-| 401 | OAuth 2 provider says client authentication failed. |
 
 
 

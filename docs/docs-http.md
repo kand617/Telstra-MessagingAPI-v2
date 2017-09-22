@@ -50,7 +50,6 @@ The API makes use of the following OAuth scopes:
 # <a name="api_reference"></a>API Reference
 
 * [Messaging](#messaging)
-* [OAuth Authorization](#o_auth_authorization)
 
 ## <a name="messaging"></a>![Endpoint Group: ](https://apidocs.io/img/class.png "Messaging") Messaging
 
@@ -103,7 +102,7 @@ The list of required scopes for this endpoint are:
 
 ```
 {
-  "status": 137,
+  "status": 185,
   "message": "message"
 }
 ```
@@ -116,7 +115,7 @@ The list of required scopes for this endpoint are:
 
 ```
 {
-  "status": 137,
+  "status": 185,
   "message": "message"
 }
 ```
@@ -130,7 +129,7 @@ not have permission
 
 ```
 {
-  "status": 137,
+  "status": 185,
   "message": "message"
 }
 ```
@@ -143,7 +142,7 @@ not have permission
 
 ```
 {
-  "status": 137,
+  "status": 185,
   "message": "message"
 }
 ```
@@ -156,7 +155,7 @@ not have permission
 
 ```
 {
-  "status": 137,
+  "status": 185,
   "message": "message"
 }
 ```
@@ -169,7 +168,7 @@ not have permission
 
 ```
 {
-  "status": 137,
+  "status": 185,
   "message": "message"
 }
 ```
@@ -184,7 +183,7 @@ in the request
 
 ```
 {
-  "status": 137,
+  "status": 185,
   "message": "message"
 }
 ```
@@ -198,7 +197,7 @@ the requested resource
 
 ```
 {
-  "status": 137,
+  "status": 185,
   "message": "message"
 }
 ```
@@ -211,7 +210,7 @@ the requested resource
 
 ```
 {
-  "status": 137,
+  "status": 185,
   "message": "message"
 }
 ```
@@ -224,7 +223,7 @@ the requested resource
 
 ```
 {
-  "status": 137,
+  "status": 185,
   "message": "message"
 }
 ```
@@ -261,7 +260,7 @@ The list of required scopes for this endpoint are:
     "from": "from",
     "body": "body",
     "receivedTimestamp": "receivedTimestamp",
-    "moreMessages": 137,
+    "moreMessages": 185,
     "messageId": "messageId"
   }
 ]
@@ -277,7 +276,7 @@ The list of required scopes for this endpoint are:
 
 ```
 {
-  "status": 137,
+  "status": 185,
   "message": "message"
 }
 ```
@@ -290,7 +289,7 @@ The list of required scopes for this endpoint are:
 
 ```
 {
-  "status": 137,
+  "status": 185,
   "message": "message"
 }
 ```
@@ -304,7 +303,7 @@ not have permission
 
 ```
 {
-  "status": 137,
+  "status": 185,
   "message": "message"
 }
 ```
@@ -317,7 +316,7 @@ not have permission
 
 ```
 {
-  "status": 137,
+  "status": 185,
   "message": "message"
 }
 ```
@@ -330,7 +329,7 @@ not have permission
 
 ```
 {
-  "status": 137,
+  "status": 185,
   "message": "message"
 }
 ```
@@ -343,7 +342,7 @@ not have permission
 
 ```
 {
-  "status": 137,
+  "status": 185,
   "message": "message"
 }
 ```
@@ -358,7 +357,7 @@ in the request
 
 ```
 {
-  "status": 137,
+  "status": 185,
   "message": "message"
 }
 ```
@@ -372,7 +371,7 @@ the requested resource
 
 ```
 {
-  "status": 137,
+  "status": 185,
   "message": "message"
 }
 ```
@@ -385,7 +384,7 @@ the requested resource
 
 ```
 {
-  "status": 137,
+  "status": 185,
   "message": "message"
 }
 ```
@@ -398,7 +397,7 @@ the requested resource
 
 ```
 {
-  "status": 137,
+  "status": 185,
   "message": "message"
 }
 ```
@@ -437,8 +436,8 @@ Raw
   "to": "to",
   "body": "body",
   "from": "from",
-  "validity": 137,
-  "scheduledDelivery": 137,
+  "validity": 185,
+  "scheduledDelivery": 185,
   "notifyURL": "notifyURL",
   "replyRequest": true
 }
@@ -463,8 +462,8 @@ Raw
     }
   ],
   "messageType": "messageType",
-  "numberSegments": 137,
-  "numberDestinations": 137
+  "numberSegments": 143,
+  "numberDestinations": 143
 }
 ```
 
@@ -478,7 +477,7 @@ Raw
 
 ```
 {
-  "status": 137,
+  "status": 143,
   "message": "message"
 }
 ```
@@ -491,7 +490,7 @@ Raw
 
 ```
 {
-  "status": 137,
+  "status": 143,
   "message": "message"
 }
 ```
@@ -505,7 +504,7 @@ not have permission
 
 ```
 {
-  "status": 137,
+  "status": 143,
   "message": "message"
 }
 ```
@@ -518,7 +517,7 @@ not have permission
 
 ```
 {
-  "status": 137,
+  "status": 143,
   "message": "message"
 }
 ```
@@ -531,7 +530,7 @@ not have permission
 
 ```
 {
-  "status": 137,
+  "status": 143,
   "message": "message"
 }
 ```
@@ -544,7 +543,7 @@ not have permission
 
 ```
 {
-  "status": 137,
+  "status": 143,
   "message": "message"
 }
 ```
@@ -559,7 +558,7 @@ in the request
 
 ```
 {
-  "status": 137,
+  "status": 143,
   "message": "message"
 }
 ```
@@ -573,7 +572,7 @@ the requested resource
 
 ```
 {
-  "status": 137,
+  "status": 143,
   "message": "message"
 }
 ```
@@ -586,7 +585,7 @@ the requested resource
 
 ```
 {
-  "status": 137,
+  "status": 143,
   "message": "message"
 }
 ```
@@ -599,7 +598,7 @@ the requested resource
 
 ```
 {
-  "status": 137,
+  "status": 143,
   "message": "message"
 }
 ```
@@ -645,7 +644,7 @@ the requested resource
 
 ```
 {
-  "status": 137,
+  "status": 143,
   "message": "message"
 }
 ```
@@ -658,7 +657,7 @@ the requested resource
 
 ```
 {
-  "status": 137,
+  "status": 143,
   "message": "message"
 }
 ```
@@ -672,7 +671,7 @@ not have permission
 
 ```
 {
-  "status": 137,
+  "status": 143,
   "message": "message"
 }
 ```
@@ -685,7 +684,7 @@ not have permission
 
 ```
 {
-  "status": 137,
+  "status": 143,
   "message": "message"
 }
 ```
@@ -698,7 +697,7 @@ not have permission
 
 ```
 {
-  "status": 137,
+  "status": 143,
   "message": "message"
 }
 ```
@@ -711,7 +710,7 @@ not have permission
 
 ```
 {
-  "status": 137,
+  "status": 143,
   "message": "message"
 }
 ```
@@ -726,7 +725,7 @@ in the request
 
 ```
 {
-  "status": 229,
+  "status": 143,
   "message": "message"
 }
 ```
@@ -740,7 +739,7 @@ the requested resource
 
 ```
 {
-  "status": 229,
+  "status": 143,
   "message": "message"
 }
 ```
@@ -753,7 +752,7 @@ the requested resource
 
 ```
 {
-  "status": 229,
+  "status": 143,
   "message": "message"
 }
 ```
@@ -766,7 +765,7 @@ the requested resource
 
 ```
 {
-  "status": 229,
+  "status": 143,
   "message": "message"
 }
 ```
@@ -833,8 +832,8 @@ Raw
     }
   ],
   "messageType": "messageType",
-  "numberSegments": 229,
-  "numberDestinations": 229
+  "numberSegments": 143,
+  "numberDestinations": 143
 }
 ```
 
@@ -852,7 +851,7 @@ Raw
 
 ```
 {
-  "status": 229,
+  "status": 143,
   "message": "message"
 }
 ```
@@ -866,7 +865,7 @@ not have permission
 
 ```
 {
-  "status": 229,
+  "status": 143,
   "message": "message"
 }
 ```
@@ -879,7 +878,7 @@ not have permission
 
 ```
 {
-  "status": 229,
+  "status": 143,
   "message": "message"
 }
 ```
@@ -892,7 +891,7 @@ not have permission
 
 ```
 {
-  "status": 229,
+  "status": 143,
   "message": "message"
 }
 ```
@@ -905,7 +904,7 @@ not have permission
 
 ```
 {
-  "status": 229,
+  "status": 143,
   "message": "message"
 }
 ```
@@ -920,7 +919,7 @@ in the request
 
 ```
 {
-  "status": 229,
+  "status": 143,
   "message": "message"
 }
 ```
@@ -934,7 +933,7 @@ the requested resource
 
 ```
 {
-  "status": 229,
+  "status": 143,
   "message": "message"
 }
 ```
@@ -947,7 +946,7 @@ the requested resource
 
 ```
 {
-  "status": 229,
+  "status": 143,
   "message": "message"
 }
 ```
@@ -960,823 +959,8 @@ the requested resource
 
 ```
 {
-  "status": 229,
+  "status": 143,
   "message": "message"
-}
-```
-
-
-[Back to API Reference](#api_reference)
-
-## <a name="o_auth_authorization"></a>![Endpoint Group: ](https://apidocs.io/img/class.png "OAuth Authorization") OAuth Authorization
-
-
-### <a name="request_token"></a>![Endpoint: ](https://apidocs.io/img/method.png "request token") request token
-
-
-**`POST`** `/token`
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-
-#### Base URL
-This endpoint uses server `access token server`.
-
-
-#### Request Headers
->Content-Type=application/x-www-form-urlencoded;
->Authorization="Authorization";
-
-#### Request Body
-Url Encoded
-
-> Additional optional form parameters are allowed
-
-| Parameter | Type | Tags | Description | Default Value |
-|-----------|------| ---- |-------------| ------------- | 
-| grant_type | string |  ```Constant ```  ``` Required ```  | Grant Type | `"client_credentials"` | 
-| scope | string |  ``` Optional ```  | Requested scopes as a space-delimited list. |  | 
-
-*Example Body*
-```
- grant_type = client_credentials 
- scope = "scope" 
-```
-
-#### Responses
-**200** 
-
-
- *Example Body* (**[OAuthToken](#o_auth_token)**) 
-
-```
-{
-  "access_token": "access_token",
-  "token_type": "token_type",
-  "expires_in": 229,
-  "scope": "scope",
-  "expiry": 229
-}
-```
-
-
-**400** 
-
-> OAuth 2 provider returned an error.
-
-
- *Example Body* (**[OAuthProvider](#o_auth_provider)**) 
-
-```
-{
-  "error": "invalid_request",
-  "error_description": "error_description",
-  "error_uri": "error_uri"
-}
-```
-**401** 
-
-> OAuth 2 provider says client authentication failed.
-
-
- *Example Body* (**[OAuthProvider](#o_auth_provider)**) 
-
-```
-{
-  "error": "invalid_request",
-  "error_description": "error_description",
-  "error_uri": "error_uri"
-}
-```
-
-
-### <a name="request_token1"></a>![Endpoint: ](https://apidocs.io/img/method.png "request token1") request token1
-
-
-**`POST`** `/token`
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-
-#### Base URL
-This endpoint uses server `access token server`.
-
-
-#### Request Headers
->Content-Type=application/x-www-form-urlencoded;
->Authorization="Authorization";
-
-#### Request Body
-Url Encoded
-
-> Additional optional form parameters are allowed
-
-| Parameter | Type | Tags | Description | Default Value |
-|-----------|------| ---- |-------------| ------------- | 
-| grant_type | string |  ```Constant ```  ``` Required ```  | Grant Type | `"client_credentials"` | 
-| scope | string |  ``` Optional ```  | Requested scopes as a space-delimited list. |  | 
-
-*Example Body*
-```
- grant_type = client_credentials 
- scope = "scope" 
-```
-
-#### Responses
-**200** 
-
-
- *Example Body* (**[OAuthToken](#o_auth_token)**) 
-
-```
-{
-  "access_token": "access_token",
-  "token_type": "token_type",
-  "expires_in": 229,
-  "scope": "scope",
-  "expiry": 229
-}
-```
-
-
-**400** 
-
-> OAuth 2 provider returned an error.
-
-
- *Example Body* (**[OAuthProvider](#o_auth_provider)**) 
-
-```
-{
-  "error": "invalid_request",
-  "error_description": "error_description",
-  "error_uri": "error_uri"
-}
-```
-**401** 
-
-> OAuth 2 provider says client authentication failed.
-
-
- *Example Body* (**[OAuthProvider](#o_auth_provider)**) 
-
-```
-{
-  "error": "invalid_request",
-  "error_description": "error_description",
-  "error_uri": "error_uri"
-}
-```
-
-
-### <a name="request_token2"></a>![Endpoint: ](https://apidocs.io/img/method.png "request token2") request token2
-
-
-**`POST`** `/token`
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-
-#### Base URL
-This endpoint uses server `access token server`.
-
-
-#### Request Headers
->Content-Type=application/x-www-form-urlencoded;
->Authorization="Authorization";
-
-#### Request Body
-Url Encoded
-
-> Additional optional form parameters are allowed
-
-| Parameter | Type | Tags | Description | Default Value |
-|-----------|------| ---- |-------------| ------------- | 
-| grant_type | string |  ```Constant ```  ``` Required ```  | Grant Type | `"client_credentials"` | 
-| scope | string |  ``` Optional ```  | Requested scopes as a space-delimited list. |  | 
-
-*Example Body*
-```
- grant_type = client_credentials 
- scope = "scope" 
-```
-
-#### Responses
-**200** 
-
-
- *Example Body* (**[OAuthToken](#o_auth_token)**) 
-
-```
-{
-  "access_token": "access_token",
-  "token_type": "token_type",
-  "expires_in": 229,
-  "scope": "scope",
-  "expiry": 229
-}
-```
-
-
-**400** 
-
-> OAuth 2 provider returned an error.
-
-
- *Example Body* (**[OAuthProvider](#o_auth_provider)**) 
-
-```
-{
-  "error": "invalid_request",
-  "error_description": "error_description",
-  "error_uri": "error_uri"
-}
-```
-**401** 
-
-> OAuth 2 provider says client authentication failed.
-
-
- *Example Body* (**[OAuthProvider](#o_auth_provider)**) 
-
-```
-{
-  "error": "invalid_request",
-  "error_description": "error_description",
-  "error_uri": "error_uri"
-}
-```
-
-
-### <a name="request_token11"></a>![Endpoint: ](https://apidocs.io/img/method.png "request token11") request token11
-
-
-**`POST`** `/token`
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-
-#### Base URL
-This endpoint uses server `access token server`.
-
-
-#### Request Headers
->Content-Type=application/x-www-form-urlencoded;
->Authorization="Authorization";
-
-#### Request Body
-Url Encoded
-
-> Additional optional form parameters are allowed
-
-| Parameter | Type | Tags | Description | Default Value |
-|-----------|------| ---- |-------------| ------------- | 
-| grant_type | string |  ```Constant ```  ``` Required ```  | Grant Type | `"client_credentials"` | 
-| scope | string |  ``` Optional ```  | Requested scopes as a space-delimited list. |  | 
-
-*Example Body*
-```
- grant_type = client_credentials 
- scope = "scope" 
-```
-
-#### Responses
-**200** 
-
-
- *Example Body* (**[OAuthToken](#o_auth_token)**) 
-
-```
-{
-  "access_token": "access_token",
-  "token_type": "token_type",
-  "expires_in": 229,
-  "scope": "scope",
-  "expiry": 229
-}
-```
-
-
-**400** 
-
-> OAuth 2 provider returned an error.
-
-
- *Example Body* (**[OAuthProvider](#o_auth_provider)**) 
-
-```
-{
-  "error": "invalid_request",
-  "error_description": "error_description",
-  "error_uri": "error_uri"
-}
-```
-**401** 
-
-> OAuth 2 provider says client authentication failed.
-
-
- *Example Body* (**[OAuthProvider](#o_auth_provider)**) 
-
-```
-{
-  "error": "invalid_request",
-  "error_description": "error_description",
-  "error_uri": "error_uri"
-}
-```
-
-
-### <a name="request_token21"></a>![Endpoint: ](https://apidocs.io/img/method.png "request token21") request token21
-
-
-**`POST`** `/token`
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-
-#### Base URL
-This endpoint uses server `access token server`.
-
-
-#### Request Headers
->Content-Type=application/x-www-form-urlencoded;
->Authorization="Authorization";
-
-#### Request Body
-Url Encoded
-
-> Additional optional form parameters are allowed
-
-| Parameter | Type | Tags | Description | Default Value |
-|-----------|------| ---- |-------------| ------------- | 
-| grant_type | string |  ```Constant ```  ``` Required ```  | Grant Type | `"client_credentials"` | 
-| scope | string |  ``` Optional ```  | Requested scopes as a space-delimited list. |  | 
-
-*Example Body*
-```
- grant_type = client_credentials 
- scope = "scope" 
-```
-
-#### Responses
-**200** 
-
-
- *Example Body* (**[OAuthToken](#o_auth_token)**) 
-
-```
-{
-  "access_token": "access_token",
-  "token_type": "token_type",
-  "expires_in": 229,
-  "scope": "scope",
-  "expiry": 229
-}
-```
-
-
-**400** 
-
-> OAuth 2 provider returned an error.
-
-
- *Example Body* (**[OAuthProvider](#o_auth_provider)**) 
-
-```
-{
-  "error": "invalid_request",
-  "error_description": "error_description",
-  "error_uri": "error_uri"
-}
-```
-**401** 
-
-> OAuth 2 provider says client authentication failed.
-
-
- *Example Body* (**[OAuthProvider](#o_auth_provider)**) 
-
-```
-{
-  "error": "invalid_request",
-  "error_description": "error_description",
-  "error_uri": "error_uri"
-}
-```
-
-
-### <a name="request_token11"></a>![Endpoint: ](https://apidocs.io/img/method.png "request token11") request token11
-
-
-**`POST`** `/token`
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-
-#### Base URL
-This endpoint uses server `access token server`.
-
-
-#### Request Headers
->Content-Type=application/x-www-form-urlencoded;
->Authorization="Authorization";
-
-#### Request Body
-Url Encoded
-
-> Additional optional form parameters are allowed
-
-| Parameter | Type | Tags | Description | Default Value |
-|-----------|------| ---- |-------------| ------------- | 
-| grant_type | string |  ```Constant ```  ``` Required ```  | Grant Type | `"client_credentials"` | 
-| scope | string |  ``` Optional ```  | Requested scopes as a space-delimited list. |  | 
-
-*Example Body*
-```
- grant_type = client_credentials 
- scope = "scope" 
-```
-
-#### Responses
-**200** 
-
-
- *Example Body* (**[OAuthToken](#o_auth_token)**) 
-
-```
-{
-  "access_token": "access_token",
-  "token_type": "token_type",
-  "expires_in": 229,
-  "scope": "scope",
-  "expiry": 229
-}
-```
-
-
-**400** 
-
-> OAuth 2 provider returned an error.
-
-
- *Example Body* (**[OAuthProvider](#o_auth_provider)**) 
-
-```
-{
-  "error": "invalid_request",
-  "error_description": "error_description",
-  "error_uri": "error_uri"
-}
-```
-**401** 
-
-> OAuth 2 provider says client authentication failed.
-
-
- *Example Body* (**[OAuthProvider](#o_auth_provider)**) 
-
-```
-{
-  "error": "invalid_request",
-  "error_description": "error_description",
-  "error_uri": "error_uri"
-}
-```
-
-
-### <a name="request_token1"></a>![Endpoint: ](https://apidocs.io/img/method.png "request token1") request token1
-
-
-**`POST`** `/token`
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-
-#### Base URL
-This endpoint uses server `access token server`.
-
-
-#### Request Headers
->Content-Type=application/x-www-form-urlencoded;
->Authorization="Authorization";
-
-#### Request Body
-Url Encoded
-
-> Additional optional form parameters are allowed
-
-| Parameter | Type | Tags | Description | Default Value |
-|-----------|------| ---- |-------------| ------------- | 
-| grant_type | string |  ```Constant ```  ``` Required ```  | Grant Type | `"client_credentials"` | 
-| scope | string |  ``` Optional ```  | Requested scopes as a space-delimited list. |  | 
-
-*Example Body*
-```
- grant_type = client_credentials 
- scope = "scope" 
-```
-
-#### Responses
-**200** 
-
-
- *Example Body* (**[OAuthToken](#o_auth_token)**) 
-
-```
-{
-  "access_token": "access_token",
-  "token_type": "token_type",
-  "expires_in": 229,
-  "scope": "scope",
-  "expiry": 229
-}
-```
-
-
-**400** 
-
-> OAuth 2 provider returned an error.
-
-
- *Example Body* (**[OAuthProvider](#o_auth_provider)**) 
-
-```
-{
-  "error": "invalid_request",
-  "error_description": "error_description",
-  "error_uri": "error_uri"
-}
-```
-**401** 
-
-> OAuth 2 provider says client authentication failed.
-
-
- *Example Body* (**[OAuthProvider](#o_auth_provider)**) 
-
-```
-{
-  "error": "invalid_request",
-  "error_description": "error_description",
-  "error_uri": "error_uri"
-}
-```
-
-
-### <a name="request_token2"></a>![Endpoint: ](https://apidocs.io/img/method.png "request token2") request token2
-
-
-**`POST`** `/token`
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-
-#### Base URL
-This endpoint uses server `access token server`.
-
-
-#### Request Headers
->Content-Type=application/x-www-form-urlencoded;
->Authorization="Authorization";
-
-#### Request Body
-Url Encoded
-
-> Additional optional form parameters are allowed
-
-| Parameter | Type | Tags | Description | Default Value |
-|-----------|------| ---- |-------------| ------------- | 
-| grant_type | string |  ```Constant ```  ``` Required ```  | Grant Type | `"client_credentials"` | 
-| scope | string |  ``` Optional ```  | Requested scopes as a space-delimited list. |  | 
-
-*Example Body*
-```
- grant_type = client_credentials 
- scope = "scope" 
-```
-
-#### Responses
-**200** 
-
-
- *Example Body* (**[OAuthToken](#o_auth_token)**) 
-
-```
-{
-  "access_token": "access_token",
-  "token_type": "token_type",
-  "expires_in": 229,
-  "scope": "scope",
-  "expiry": 229
-}
-```
-
-
-**400** 
-
-> OAuth 2 provider returned an error.
-
-
- *Example Body* (**[OAuthProvider](#o_auth_provider)**) 
-
-```
-{
-  "error": "invalid_request",
-  "error_description": "error_description",
-  "error_uri": "error_uri"
-}
-```
-**401** 
-
-> OAuth 2 provider says client authentication failed.
-
-
- *Example Body* (**[OAuthProvider](#o_auth_provider)**) 
-
-```
-{
-  "error": "invalid_request",
-  "error_description": "error_description",
-  "error_uri": "error_uri"
-}
-```
-
-
-### <a name="request_token3"></a>![Endpoint: ](https://apidocs.io/img/method.png "request token3") request token3
-
-
-**`POST`** `/token`
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-
-#### Base URL
-This endpoint uses server `access token server`.
-
-
-#### Request Headers
->Content-Type=application/x-www-form-urlencoded;
->Authorization="Authorization";
-
-#### Request Body
-Url Encoded
-
-> Additional optional form parameters are allowed
-
-| Parameter | Type | Tags | Description | Default Value |
-|-----------|------| ---- |-------------| ------------- | 
-| grant_type | string |  ```Constant ```  ``` Required ```  | Grant Type | `"client_credentials"` | 
-| scope | string |  ``` Optional ```  | Requested scopes as a space-delimited list. |  | 
-
-*Example Body*
-```
- grant_type = client_credentials 
- scope = "scope" 
-```
-
-#### Responses
-**200** 
-
-
- *Example Body* (**[OAuthToken](#o_auth_token)**) 
-
-```
-{
-  "access_token": "access_token",
-  "token_type": "token_type",
-  "expires_in": 229,
-  "scope": "scope",
-  "expiry": 229
-}
-```
-
-
-**400** 
-
-> OAuth 2 provider returned an error.
-
-
- *Example Body* (**[OAuthProvider](#o_auth_provider)**) 
-
-```
-{
-  "error": "invalid_request",
-  "error_description": "error_description",
-  "error_uri": "error_uri"
-}
-```
-**401** 
-
-> OAuth 2 provider says client authentication failed.
-
-
- *Example Body* (**[OAuthProvider](#o_auth_provider)**) 
-
-```
-{
-  "error": "invalid_request",
-  "error_description": "error_description",
-  "error_uri": "error_uri"
-}
-```
-
-
-### <a name="request_token"></a>![Endpoint: ](https://apidocs.io/img/method.png "request token") request token
-
-
-**`POST`** `/token`
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-
-#### Base URL
-This endpoint uses server `access token server`.
-
-
-#### Request Headers
->Content-Type=application/x-www-form-urlencoded;
->Authorization="Authorization";
-
-#### Request Body
-Url Encoded
-
-> Additional optional form parameters are allowed
-
-| Parameter | Type | Tags | Description | Default Value |
-|-----------|------| ---- |-------------| ------------- | 
-| grant_type | string |  ```Constant ```  ``` Required ```  | Grant Type | `"client_credentials"` | 
-| scope | string |  ``` Optional ```  | Requested scopes as a space-delimited list. |  | 
-
-*Example Body*
-```
- grant_type = client_credentials 
- scope = "scope" 
-```
-
-#### Responses
-**200** 
-
-
- *Example Body* (**[OAuthToken](#o_auth_token)**) 
-
-```
-{
-  "access_token": "access_token",
-  "token_type": "token_type",
-  "expires_in": 229,
-  "scope": "scope",
-  "expiry": 229
-}
-```
-
-
-**400** 
-
-> OAuth 2 provider returned an error.
-
-
- *Example Body* (**[OAuthProvider](#o_auth_provider)**) 
-
-```
-{
-  "error": "invalid_request",
-  "error_description": "error_description",
-  "error_uri": "error_uri"
-}
-```
-**401** 
-
-> OAuth 2 provider says client authentication failed.
-
-
- *Example Body* (**[OAuthProvider](#o_auth_provider)**) 
-
-```
-{
-  "error": "invalid_request",
-  "error_description": "error_description",
-  "error_uri": "error_uri"
 }
 ```
 
@@ -1857,7 +1041,7 @@ Url Encoded
 #### Example
 ```
 {
-  "status": 179,
+  "status": 158,
   "message": "message"
 }
 ```
@@ -1922,8 +1106,8 @@ SMS
     }
   ],
   "messageType": "messageType",
-  "numberSegments": 179,
-  "numberDestinations": 179
+  "numberSegments": 207,
+  "numberDestinations": 207
 }
 ```
 
@@ -2051,10 +1235,10 @@ PEND
   "to": "to",
   "body": "body",
   "from": "from",
-  "validity": 179,
-  "scheduledDelivery": 179,
+  "validity": 44,
+  "scheduledDelivery": 44,
   "notifyURL": "notifyURL",
-  "replyRequest": true
+  "replyRequest": false
 }
 ```
 
@@ -2086,7 +1270,7 @@ PEND
   "from": "from",
   "to": "to",
   "subject": "subject",
-  "replyRequest": true,
+  "replyRequest": false,
   "MMSContent": [
     {
       "type": "type",
@@ -2157,7 +1341,7 @@ PEND
   "from": "from",
   "body": "body",
   "receivedTimestamp": "receivedTimestamp",
-  "moreMessages": 179,
+  "moreMessages": 44,
   "messageId": "messageId"
 }
 ```
@@ -2214,9 +1398,9 @@ NSMS
 {
   "access_token": "access_token",
   "token_type": "token_type",
-  "expires_in": 179,
+  "expires_in": 44,
   "scope": "scope",
-  "expiry": 179
+  "expiry": 44
 }
 ```
 
@@ -2331,9 +1515,9 @@ NSMS
 {
   "access_token": "access_token",
   "token_type": "token_type",
-  "expires_in": 179,
+  "expires_in": 44,
   "scope": "scope",
-  "expiry": 179
+  "expiry": 44
 }
 ```
 
@@ -2448,9 +1632,9 @@ NSMS
 {
   "access_token": "access_token",
   "token_type": "token_type",
-  "expires_in": 179,
+  "expires_in": 44,
   "scope": "scope",
-  "expiry": 179
+  "expiry": 44
 }
 ```
 
@@ -2565,9 +1749,9 @@ NSMS
 {
   "access_token": "access_token",
   "token_type": "token_type",
-  "expires_in": 137,
+  "expires_in": 44,
   "scope": "scope",
-  "expiry": 137
+  "expiry": 44
 }
 ```
 
@@ -2682,9 +1866,9 @@ NSMS
 {
   "access_token": "access_token",
   "token_type": "token_type",
-  "expires_in": 137,
+  "expires_in": 44,
   "scope": "scope",
-  "expiry": 137
+  "expiry": 44
 }
 ```
 
@@ -2799,9 +1983,9 @@ NSMS
 {
   "access_token": "access_token",
   "token_type": "token_type",
-  "expires_in": 137,
+  "expires_in": 44,
   "scope": "scope",
-  "expiry": 137
+  "expiry": 44
 }
 ```
 
@@ -2916,9 +2100,9 @@ NSMS
 {
   "access_token": "access_token",
   "token_type": "token_type",
-  "expires_in": 137,
+  "expires_in": 44,
   "scope": "scope",
-  "expiry": 137
+  "expiry": 44
 }
 ```
 
@@ -3033,9 +2217,9 @@ NSMS
 {
   "access_token": "access_token",
   "token_type": "token_type",
-  "expires_in": 137,
+  "expires_in": 44,
   "scope": "scope",
-  "expiry": 137
+  "expiry": 44
 }
 ```
 
@@ -3150,9 +2334,9 @@ NSMS
 {
   "access_token": "access_token",
   "token_type": "token_type",
-  "expires_in": 137,
+  "expires_in": 44,
   "scope": "scope",
-  "expiry": 137
+  "expiry": 44
 }
 ```
 
@@ -3267,9 +2451,9 @@ NSMS
 {
   "access_token": "access_token",
   "token_type": "token_type",
-  "expires_in": 137,
+  "expires_in": 135,
   "scope": "scope",
-  "expiry": 137
+  "expiry": 135
 }
 ```
 
