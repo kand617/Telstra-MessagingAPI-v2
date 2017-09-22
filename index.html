@@ -1,66 +1,96 @@
-
 <!DOCTYPE html>
 <html lang="en">
-    <head><meta charset="utf-8">
+
+<head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="shortcut icon" href="/favicon.ico">
     <title>Your Portal - Powered by APIMatic</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <style>
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: "Open Sans", sans-serif;
-    }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        .apimatic-container {
+            position: relative;
+            top: 100px;
+        }
+
+        .telstra-portal-header {
+            width: 100%;
+            height: 80px;
+            background: url('https://dev.telstra.com/sites/all/themes/custom/tsg_theme/images/spectrum.png') no-repeat no-repeat right;
+        }
+
+        .telstra-portal-header-center {
+            max-width: 1090px;
+            height: 80px;
+            margin: 0 auto;
+        }
+
+        .telstra-portal-header-center img {
+            height: 40px;
+            margin-top: 15px;
+            float: left;
+        }
+
+        .telstra-portal-header-center p {
+            float: left;
+            color: #555;
+            font-size: 14px;
+            margin: 25px 0 0 15px;
+        }
+
+        .telstra-portal {
+            outline: none;
+            border: none;
+            width: 100%;
+        }
+
+        @media (max-height:850px) {}
     </style>
-    </head>
-    <body>
-        <div id="apimatic" data-theme="light" data-apikey="qayICcOCnHdt05ioeR8Xd9zHOuYlTvexhvBsP2bMerCGSbLfllS-n4Xs7SLJyfJ1">
+
+    <script>
+        window.onload = function () {
+            getWindowHeight();
+            window.addEventListener('resize', getWindowHeight)
+            function getWindowHeight() {
+                var windowHeight = (window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight);
+                var newHeight = windowHeight - 85;
+                return document.getElementById('telstra-portal').setAttribute("style", "height:" + newHeight + "px;");
+                
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div class="telstra-portal-header">
+        <div class="telstra-portal-header-center">
+            <a href="https://dev.telstra.com/">
+                <img src="https://dev.telstra.com/sites/all/themes/custom/tsg_theme/images/t_logo.svg">
+                <p>Developer</p>
+            </a>
         </div>
-        <script type="text/javascript" src="https://dxjs.apimatic.io/static/js/portal.v2.js">
+    </div>
+
+    <iframe class="telstra-portal" id="telstra-portal" data-bind="attr: {srcdoc: overviewHtmlText()}, event: {'load': srcdocIFrameLoaded.bind($root, $element)}, oapI18n: {attr: {'title': '/oap.commonui.tooltips.overview'}}"
+        srcdoc="<script type=&quot;text/javascript&quot;> var script = document.createElement(&quot;script&quot;);script.src=&quot;https://dxjs.apimatic.io/static/js/portal.v2.js&quot;;script.onload = function() {  APIMaticDevPortal.show(
+               { container: &quot;apimatic-widget&quot;,  apiKey: &quot;qayICcOCnHdt05ioeR8Xd9zHOuYlTvexhvBsP2bMerCGSbLfllS-n4Xs7SLJyfJ1&quot;,  baseTheme: &quot;light&quot;, allowedLanguages:[&quot;angular_javascript_lib&quot;, &quot;objc_cocoa_touch_ios_lib&quot;, &quot;cs_portable_net_lib&quot;, &quot;java_gradle_android_lib&quot;, &quot;java_eclipse_jre_lib&quot;, &quot;php_generic_lib&quot;, &quot;ruby_generic_lib&quot;, &quot;node_javascript_lib&quot;, &quot;python_generic_lib&quot;], customDocs:{&quot;objc_cocoa_touch_ios_lib&quot;:&quot;https://apimatic.github.io/Telstra-MessagingAPI-v2/docs/objc_cocoa_touch_ios_lib.md&quot;,&quot;angular_javascript_lib&quot;:&quot;https://apimatic.github.io/Telstra-MessagingAPI-v2/docs/angular_javascript_lib.md&quot;,&quot;node_javascript_lib&quot;:&quot;https://apimatic.github.io/Telstra-MessagingAPI-v2/docs/node_javascript_lib.md&quot;,&quot;cs_portable_net_lib&quot;:&quot;https://apimatic.github.io/Telstra-MessagingAPI-v2/docs/cs_portable_net_lib.md&quot;,&quot;ruby_generic_lib&quot;:&quot;https://apimatic.github.io/Telstra-MessagingAPI-v2/docs/ruby_generic_lib.md&quot;,&quot;python_generic_lib&quot;:&quot;https://apimatic.github.io/Telstra-MessagingAPI-v2/docs/python_generic_lib.md&quot;,&quot;go_generic_lib&quot;:&quot;https://apimatic.github.io/Telstra-MessagingAPI-v2/docs/go_generic_lib.md&quot;,&quot;java_gradle_android_lib&quot;:&quot;https://apimatic.github.io/Telstra-MessagingAPI-v2/docs/java_gradle_android_lib.md&quot;,&quot;php_generic_lib&quot;:&quot;https://apimatic.github.io/Telstra-MessagingAPI-v2/docs/php_generic_lib.md&quot;,&quot;java_eclipse_jre_lib&quot;:&quot;https://apimatic.github.io/Telstra-MessagingAPI-v2/docs/java_eclipse_jre_lib.md&quot;,&quot;docs-http&quot;:&quot;https://apimatic.github.io/Telstra-MessagingAPI-v2/docs/docs-http.md&quot;}, themeOverrides: {palette: { primaryColor1: &quot;#bf4866&quot;, primaryColor1: &quot;#bf4866&quot; }} }); 
+            };
+            document.getElementsByTagName(&quot;head&quot;)[0].appendChild(script);
         </script>
-        <script>
-            window.onload = function(){
-            var container = "apimatic";
-            var containerElement = document.getElementById(container);
-            var apiKey = containerElement.getAttribute('data-apikey');
-            var theme = containerElement.getAttribute('data-theme');
-                        var options = {
-                container: container,
-                apiKey: apiKey,
-                baseTheme: theme,
-                loadAllDocsOnInit:false,
-                apiName:"Telstra Messaging API",
-                allowedLanguages:[
-                                    "objc_cocoa_touch_ios_lib",
-                                    "angular_javascript_lib",
-                                    "node_javascript_lib",
-                                    "cs_portable_net_lib",
-                                    "ruby_generic_lib",
-                                    "python_generic_lib",
-                                    "go_generic_lib",
-                                    "java_gradle_android_lib",
-                                    "php_generic_lib",
-                                    "java_eclipse_jre_lib",
-                                    "docs-http"
-                                ],
-                customDocs:{
-                                    "objc_cocoa_touch_ios_lib":"https://apimatic.github.io/Telstra-MessagingAPI-v2/docs/objc_cocoa_touch_ios_lib.md",
-                                    "angular_javascript_lib":"https://apimatic.github.io/Telstra-MessagingAPI-v2/docs/angular_javascript_lib.md",
-                                    "node_javascript_lib":"https://apimatic.github.io/Telstra-MessagingAPI-v2/docs/node_javascript_lib.md",
-                                    "cs_portable_net_lib":"https://apimatic.github.io/Telstra-MessagingAPI-v2/docs/cs_portable_net_lib.md",
-                                    "ruby_generic_lib":"https://apimatic.github.io/Telstra-MessagingAPI-v2/docs/ruby_generic_lib.md",
-                                    "python_generic_lib":"https://apimatic.github.io/Telstra-MessagingAPI-v2/docs/python_generic_lib.md",
-                                    "go_generic_lib":"https://apimatic.github.io/Telstra-MessagingAPI-v2/docs/go_generic_lib.md",
-                                    "java_gradle_android_lib":"https://apimatic.github.io/Telstra-MessagingAPI-v2/docs/java_gradle_android_lib.md",
-                                    "php_generic_lib":"https://apimatic.github.io/Telstra-MessagingAPI-v2/docs/php_generic_lib.md",
-                                    "java_eclipse_jre_lib":"https://apimatic.github.io/Telstra-MessagingAPI-v2/docs/java_eclipse_jre_lib.md",
-                                    "docs-http":"https://apimatic.github.io/Telstra-MessagingAPI-v2/docs/docs-http.md"
-                                },
-                themeOverrides: {
-                }
-            }
-            APIMaticDevPortal.show(options);
-            }
-        </script>
-    </body>
+        <div id=&quot;apimatic-widget&quot;/>" title="Overview"></iframe>
+
+    <div class="apimatic-container">
+        <div id="apimatic" class="apimatic" data-theme="light" data-apikey="qayICcOCnHdt05ioeR8Xd9zHOuYlTvexhvBsP2bMerCGSbLfllS-n4Xs7SLJyfJ1">
+        </div>
+    </div>
+</body>
+
 </html>
