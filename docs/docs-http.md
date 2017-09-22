@@ -103,7 +103,7 @@ The list of required scopes for this endpoint are:
 
 ```
 {
-  "status": 167,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -116,7 +116,7 @@ The list of required scopes for this endpoint are:
 
 ```
 {
-  "status": 167,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -130,7 +130,7 @@ not have permission
 
 ```
 {
-  "status": 167,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -143,7 +143,7 @@ not have permission
 
 ```
 {
-  "status": 167,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -156,7 +156,7 @@ not have permission
 
 ```
 {
-  "status": 167,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -169,7 +169,7 @@ not have permission
 
 ```
 {
-  "status": 167,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -184,7 +184,7 @@ in the request
 
 ```
 {
-  "status": 167,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -198,7 +198,7 @@ the requested resource
 
 ```
 {
-  "status": 167,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -211,7 +211,7 @@ the requested resource
 
 ```
 {
-  "status": 167,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -224,7 +224,7 @@ the requested resource
 
 ```
 {
-  "status": 167,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -261,7 +261,7 @@ The list of required scopes for this endpoint are:
     "from": "from",
     "body": "body",
     "receivedTimestamp": "receivedTimestamp",
-    "moreMessages": 167,
+    "moreMessages": 137,
     "messageId": "messageId"
   }
 ]
@@ -277,7 +277,7 @@ The list of required scopes for this endpoint are:
 
 ```
 {
-  "status": 167,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -290,7 +290,7 @@ The list of required scopes for this endpoint are:
 
 ```
 {
-  "status": 167,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -304,7 +304,7 @@ not have permission
 
 ```
 {
-  "status": 167,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -317,7 +317,7 @@ not have permission
 
 ```
 {
-  "status": 167,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -330,7 +330,7 @@ not have permission
 
 ```
 {
-  "status": 167,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -343,7 +343,7 @@ not have permission
 
 ```
 {
-  "status": 167,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -358,7 +358,7 @@ in the request
 
 ```
 {
-  "status": 167,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -372,7 +372,7 @@ the requested resource
 
 ```
 {
-  "status": 167,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -385,7 +385,7 @@ the requested resource
 
 ```
 {
-  "status": 167,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -398,7 +398,7 @@ the requested resource
 
 ```
 {
-  "status": 3,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -437,10 +437,10 @@ Raw
   "to": "to",
   "body": "body",
   "from": "from",
-  "validity": 3,
-  "scheduledDelivery": 3,
+  "validity": 137,
+  "scheduledDelivery": 137,
   "notifyURL": "notifyURL",
-  "replyRequest": false
+  "replyRequest": true
 }
 ``` 
 
@@ -463,8 +463,8 @@ Raw
     }
   ],
   "messageType": "messageType",
-  "numberSegments": 3,
-  "numberDestinations": 3
+  "numberSegments": 137,
+  "numberDestinations": 137
 }
 ```
 
@@ -478,7 +478,7 @@ Raw
 
 ```
 {
-  "status": 3,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -491,7 +491,7 @@ Raw
 
 ```
 {
-  "status": 3,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -505,7 +505,7 @@ not have permission
 
 ```
 {
-  "status": 3,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -518,7 +518,7 @@ not have permission
 
 ```
 {
-  "status": 3,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -531,7 +531,7 @@ not have permission
 
 ```
 {
-  "status": 3,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -544,7 +544,7 @@ not have permission
 
 ```
 {
-  "status": 3,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -559,7 +559,7 @@ in the request
 
 ```
 {
-  "status": 3,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -573,7 +573,7 @@ the requested resource
 
 ```
 {
-  "status": 3,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -586,7 +586,7 @@ the requested resource
 
 ```
 {
-  "status": 3,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -599,7 +599,7 @@ the requested resource
 
 ```
 {
-  "status": 3,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -645,7 +645,7 @@ the requested resource
 
 ```
 {
-  "status": 3,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -658,7 +658,7 @@ the requested resource
 
 ```
 {
-  "status": 3,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -672,7 +672,7 @@ not have permission
 
 ```
 {
-  "status": 3,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -685,7 +685,7 @@ not have permission
 
 ```
 {
-  "status": 3,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -698,7 +698,7 @@ not have permission
 
 ```
 {
-  "status": 3,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -711,7 +711,7 @@ not have permission
 
 ```
 {
-  "status": 3,
+  "status": 137,
   "message": "message"
 }
 ```
@@ -726,7 +726,7 @@ in the request
 
 ```
 {
-  "status": 3,
+  "status": 229,
   "message": "message"
 }
 ```
@@ -740,7 +740,7 @@ the requested resource
 
 ```
 {
-  "status": 3,
+  "status": 229,
   "message": "message"
 }
 ```
@@ -753,7 +753,7 @@ the requested resource
 
 ```
 {
-  "status": 3,
+  "status": 229,
   "message": "message"
 }
 ```
@@ -766,7 +766,7 @@ the requested resource
 
 ```
 {
-  "status": 3,
+  "status": 229,
   "message": "message"
 }
 ```
@@ -805,7 +805,7 @@ Raw
   "from": "from",
   "to": "to",
   "subject": "subject",
-  "replyRequest": false,
+  "replyRequest": true,
   "MMSContent": [
     {
       "type": "type",
@@ -833,8 +833,8 @@ Raw
     }
   ],
   "messageType": "messageType",
-  "numberSegments": 3,
-  "numberDestinations": 3
+  "numberSegments": 229,
+  "numberDestinations": 229
 }
 ```
 
@@ -852,7 +852,7 @@ Raw
 
 ```
 {
-  "status": 3,
+  "status": 229,
   "message": "message"
 }
 ```
@@ -866,7 +866,7 @@ not have permission
 
 ```
 {
-  "status": 3,
+  "status": 229,
   "message": "message"
 }
 ```
@@ -879,7 +879,7 @@ not have permission
 
 ```
 {
-  "status": 3,
+  "status": 229,
   "message": "message"
 }
 ```
@@ -892,7 +892,7 @@ not have permission
 
 ```
 {
-  "status": 3,
+  "status": 229,
   "message": "message"
 }
 ```
@@ -905,7 +905,7 @@ not have permission
 
 ```
 {
-  "status": 3,
+  "status": 229,
   "message": "message"
 }
 ```
@@ -920,7 +920,7 @@ in the request
 
 ```
 {
-  "status": 3,
+  "status": 229,
   "message": "message"
 }
 ```
@@ -934,7 +934,7 @@ the requested resource
 
 ```
 {
-  "status": 3,
+  "status": 229,
   "message": "message"
 }
 ```
@@ -947,7 +947,7 @@ the requested resource
 
 ```
 {
-  "status": 3,
+  "status": 229,
   "message": "message"
 }
 ```
@@ -960,7 +960,7 @@ the requested resource
 
 ```
 {
-  "status": 3,
+  "status": 229,
   "message": "message"
 }
 ```
@@ -1015,9 +1015,9 @@ Url Encoded
 {
   "access_token": "access_token",
   "token_type": "token_type",
-  "expires_in": 3,
+  "expires_in": 229,
   "scope": "scope",
-  "expiry": 3
+  "expiry": 229
 }
 ```
 
@@ -1096,9 +1096,9 @@ Url Encoded
 {
   "access_token": "access_token",
   "token_type": "token_type",
-  "expires_in": 3,
+  "expires_in": 229,
   "scope": "scope",
-  "expiry": 3
+  "expiry": 229
 }
 ```
 
@@ -1177,9 +1177,9 @@ Url Encoded
 {
   "access_token": "access_token",
   "token_type": "token_type",
-  "expires_in": 3,
+  "expires_in": 229,
   "scope": "scope",
-  "expiry": 3
+  "expiry": 229
 }
 ```
 
@@ -1258,9 +1258,9 @@ Url Encoded
 {
   "access_token": "access_token",
   "token_type": "token_type",
-  "expires_in": 3,
+  "expires_in": 229,
   "scope": "scope",
-  "expiry": 3
+  "expiry": 229
 }
 ```
 
@@ -1339,9 +1339,9 @@ Url Encoded
 {
   "access_token": "access_token",
   "token_type": "token_type",
-  "expires_in": 3,
+  "expires_in": 229,
   "scope": "scope",
-  "expiry": 3
+  "expiry": 229
 }
 ```
 
@@ -1420,9 +1420,9 @@ Url Encoded
 {
   "access_token": "access_token",
   "token_type": "token_type",
-  "expires_in": 3,
+  "expires_in": 229,
   "scope": "scope",
-  "expiry": 3
+  "expiry": 229
 }
 ```
 
@@ -1501,9 +1501,9 @@ Url Encoded
 {
   "access_token": "access_token",
   "token_type": "token_type",
-  "expires_in": 3,
+  "expires_in": 229,
   "scope": "scope",
-  "expiry": 3
+  "expiry": 229
 }
 ```
 
@@ -1582,9 +1582,9 @@ Url Encoded
 {
   "access_token": "access_token",
   "token_type": "token_type",
-  "expires_in": 3,
+  "expires_in": 229,
   "scope": "scope",
-  "expiry": 3
+  "expiry": 229
 }
 ```
 
@@ -1663,9 +1663,9 @@ Url Encoded
 {
   "access_token": "access_token",
   "token_type": "token_type",
-  "expires_in": 3,
+  "expires_in": 229,
   "scope": "scope",
-  "expiry": 3
+  "expiry": 229
 }
 ```
 
@@ -1744,9 +1744,9 @@ Url Encoded
 {
   "access_token": "access_token",
   "token_type": "token_type",
-  "expires_in": 3,
+  "expires_in": 229,
   "scope": "scope",
-  "expiry": 3
+  "expiry": 229
 }
 ```
 
@@ -1857,7 +1857,7 @@ Url Encoded
 #### Example
 ```
 {
-  "status": 75,
+  "status": 179,
   "message": "message"
 }
 ```
@@ -1922,8 +1922,8 @@ SMS
     }
   ],
   "messageType": "messageType",
-  "numberSegments": 75,
-  "numberDestinations": 75
+  "numberSegments": 179,
+  "numberDestinations": 179
 }
 ```
 
@@ -2051,10 +2051,10 @@ PEND
   "to": "to",
   "body": "body",
   "from": "from",
-  "validity": 75,
-  "scheduledDelivery": 75,
+  "validity": 179,
+  "scheduledDelivery": 179,
   "notifyURL": "notifyURL",
-  "replyRequest": false
+  "replyRequest": true
 }
 ```
 
@@ -2086,7 +2086,7 @@ PEND
   "from": "from",
   "to": "to",
   "subject": "subject",
-  "replyRequest": false,
+  "replyRequest": true,
   "MMSContent": [
     {
       "type": "type",
@@ -2157,7 +2157,7 @@ PEND
   "from": "from",
   "body": "body",
   "receivedTimestamp": "receivedTimestamp",
-  "moreMessages": 75,
+  "moreMessages": 179,
   "messageId": "messageId"
 }
 ```
@@ -2214,9 +2214,9 @@ NSMS
 {
   "access_token": "access_token",
   "token_type": "token_type",
-  "expires_in": 75,
+  "expires_in": 179,
   "scope": "scope",
-  "expiry": 75
+  "expiry": 179
 }
 ```
 
@@ -2331,9 +2331,9 @@ NSMS
 {
   "access_token": "access_token",
   "token_type": "token_type",
-  "expires_in": 75,
+  "expires_in": 179,
   "scope": "scope",
-  "expiry": 75
+  "expiry": 179
 }
 ```
 
@@ -2448,9 +2448,9 @@ NSMS
 {
   "access_token": "access_token",
   "token_type": "token_type",
-  "expires_in": 75,
+  "expires_in": 179,
   "scope": "scope",
-  "expiry": 75
+  "expiry": 179
 }
 ```
 
@@ -2565,9 +2565,9 @@ NSMS
 {
   "access_token": "access_token",
   "token_type": "token_type",
-  "expires_in": 167,
+  "expires_in": 137,
   "scope": "scope",
-  "expiry": 167
+  "expiry": 137
 }
 ```
 
@@ -2682,9 +2682,9 @@ NSMS
 {
   "access_token": "access_token",
   "token_type": "token_type",
-  "expires_in": 167,
+  "expires_in": 137,
   "scope": "scope",
-  "expiry": 167
+  "expiry": 137
 }
 ```
 
@@ -2799,9 +2799,9 @@ NSMS
 {
   "access_token": "access_token",
   "token_type": "token_type",
-  "expires_in": 167,
+  "expires_in": 137,
   "scope": "scope",
-  "expiry": 167
+  "expiry": 137
 }
 ```
 
@@ -2916,9 +2916,9 @@ NSMS
 {
   "access_token": "access_token",
   "token_type": "token_type",
-  "expires_in": 167,
+  "expires_in": 137,
   "scope": "scope",
-  "expiry": 167
+  "expiry": 137
 }
 ```
 
@@ -3033,9 +3033,9 @@ NSMS
 {
   "access_token": "access_token",
   "token_type": "token_type",
-  "expires_in": 167,
+  "expires_in": 137,
   "scope": "scope",
-  "expiry": 167
+  "expiry": 137
 }
 ```
 
@@ -3150,9 +3150,9 @@ NSMS
 {
   "access_token": "access_token",
   "token_type": "token_type",
-  "expires_in": 167,
+  "expires_in": 137,
   "scope": "scope",
-  "expiry": 167
+  "expiry": 137
 }
 ```
 
@@ -3267,9 +3267,9 @@ NSMS
 {
   "access_token": "access_token",
   "token_type": "token_type",
-  "expires_in": 167,
+  "expires_in": 137,
   "scope": "scope",
-  "expiry": 167
+  "expiry": 137
 }
 ```
 

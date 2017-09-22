@@ -231,16 +231,12 @@ messaging.getSMSStatusAsync(messageId, new APICallBack<OutboundPollResponse>() {
 |------------|-------------------|
 | 400 | Invalid or missing request parameters |
 | 401 | Invalid or no credentials passed in the request |
-| 403 | Authorization credentials passed and accepted but account does
-not have permission |
+| 403 | Authorization credentials passed and accepted but account does<br>not have permission |
 | 404 | The requested URI does not exist |
 | 405 | The requested resource does not support the supplied verb |
 | 415 | API does not support the requested content type |
-| 422 | The request is formed correctly, but due to some condition
-the request cannot be processed e.g. email is required and it is not provided
-in the request |
-| 501 | The HTTP method being used has not yet been implemented for
-the requested resource |
+| 422 | The request is formed correctly, but due to some condition<br>the request cannot be processed e.g. email is required and it is not provided<br>in the request |
+| 501 | The HTTP method being used has not yet been implemented for<br>the requested resource |
 | 503 | The service requested is currently unavailable |
 | 0 | An internal error occurred when processing the request |
 
@@ -276,16 +272,12 @@ messaging.retrieveSMSResponsesAsync(new APICallBack<List<InboundPollResponse>>()
 |------------|-------------------|
 | 400 | Invalid or missing request parameters |
 | 401 | Invalid or no credentials passed in the request |
-| 403 | Authorization credentials passed and accepted but account does
-not have permission |
+| 403 | Authorization credentials passed and accepted but account does<br>not have permission |
 | 404 | The requested URI does not exist |
 | 405 | The requested resource does not support the supplied verb |
 | 415 | API does not support the requested content type |
-| 422 | The request is formed correctly, but due to some condition
-the request cannot be processed e.g. email is required and it is not provided
-in the request |
-| 501 | The HTTP method being used has not yet been implemented for
-the requested resource |
+| 422 | The request is formed correctly, but due to some condition<br>the request cannot be processed e.g. email is required and it is not provided<br>in the request |
+| 501 | The HTTP method being used has not yet been implemented for<br>the requested resource |
 | 503 | The service requested is currently unavailable |
 | 0 | An internal error occurred when processing the request |
 
@@ -337,16 +329,12 @@ try {
 |------------|-------------------|
 | 400 | Invalid or missing request parameters |
 | 401 | Invalid or no credentials passed in the request |
-| 403 | Authorization credentials passed and accepted but account does
-not have permission |
+| 403 | Authorization credentials passed and accepted but account does<br>not have permission |
 | 404 | The requested URI does not exist |
 | 405 | The requested resource does not support the supplied verb |
 | 415 | API does not support the requested content type |
-| 422 | The request is formed correctly, but due to some condition
-the request cannot be processed e.g. email is required and it is not provided
-in the request |
-| 501 | The HTTP method being used has not yet been implemented for
-the requested resource |
+| 422 | The request is formed correctly, but due to some condition<br>the request cannot be processed e.g. email is required and it is not provided<br>in the request |
+| 501 | The HTTP method being used has not yet been implemented for<br>the requested resource |
 | 503 | The service requested is currently unavailable |
 | 0 | An internal error occurred when processing the request |
 
@@ -393,16 +381,12 @@ messaging.getMMSStatusAsync(messageid, new APICallBack<OutboundPollResponse>() {
 |------------|-------------------|
 | 400 | Invalid or missing request parameters |
 | 401 | Invalid or no credentials passed in the request |
-| 403 | Authorization credentials passed and accepted but account does
-not have permission |
+| 403 | Authorization credentials passed and accepted but account does<br>not have permission |
 | 404 | The requested URI does not exist |
 | 405 | The requested resource does not support the supplied verb |
 | 415 | API does not support the requested content type |
-| 422 | The request is formed correctly, but due to some condition
-the request cannot be processed e.g. email is required and it is not provided
-in the request |
-| 501 | The HTTP method being used has not yet been implemented for
-the requested resource |
+| 422 | The request is formed correctly, but due to some condition<br>the request cannot be processed e.g. email is required and it is not provided<br>in the request |
+| 501 | The HTTP method being used has not yet been implemented for<br>the requested resource |
 | 503 | The service requested is currently unavailable |
 | 0 | An internal error occurred when processing the request |
 
@@ -454,16 +438,12 @@ try {
 |------------|-------------------|
 | 400 | Invalid or missing request parameters |
 | 401 | Invalid or no credentials passed in the request |
-| 403 | Authorization credentials passed and accepted but account does
-not have permission |
+| 403 | Authorization credentials passed and accepted but account does<br>not have permission |
 | 404 | The requested URI does not exist |
 | 405 | The requested resource does not support the supplied verb |
 | 415 | API does not support the requested content type |
-| 422 | The request is formed correctly, but due to some condition
-the request cannot be processed e.g. email is required and it is not provided
-in the request |
-| 501 | The HTTP method being used has not yet been implemented for
-the requested resource |
+| 422 | The request is formed correctly, but due to some condition<br>the request cannot be processed e.g. email is required and it is not provided<br>in the request |
+| 501 | The HTTP method being used has not yet been implemented for<br>the requested resource |
 | 503 | The service requested is currently unavailable |
 | 0 | An internal error occurred when processing the request |
 
