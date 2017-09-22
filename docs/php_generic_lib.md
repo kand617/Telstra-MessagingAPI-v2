@@ -223,7 +223,6 @@ if (isset($_SESSION['access_token']) && $_SESSION['access_token']) {
 ## <a name="list_of_controllers"></a>List of Controllers
 
 * [MessagingController](#messaging_controller)
-* [OAuthAuthorizationController](#o_auth_authorization_controller)
 
 ## <a name="messaging_controller"></a>![Class: ](https://apidocs.io/img/class.png ".MessagingController") MessagingController
 
@@ -268,16 +267,12 @@ $result = $messaging->getSMSStatus($messageId);
 |------------|-------------------|
 | 400 | Invalid or missing request parameters |
 | 401 | Invalid or no credentials passed in the request |
-| 403 | Authorization credentials passed and accepted but account does
-not have permission |
+| 403 | Authorization credentials passed and accepted but account does<br>not have permission |
 | 404 | The requested URI does not exist |
 | 405 | The requested resource does not support the supplied verb |
 | 415 | API does not support the requested content type |
-| 422 | The request is formed correctly, but due to some condition
-the request cannot be processed e.g. email is required and it is not provided
-in the request |
-| 501 | The HTTP method being used has not yet been implemented for
-the requested resource |
+| 422 | The request is formed correctly, but due to some condition<br>the request cannot be processed e.g. email is required and it is not provided<br>in the request |
+| 501 | The HTTP method being used has not yet been implemented for<br>the requested resource |
 | 503 | The service requested is currently unavailable |
 | 0 | An internal error occurred when processing the request |
 
@@ -306,16 +301,12 @@ $result = $messaging->retrieveSMSResponses();
 |------------|-------------------|
 | 400 | Invalid or missing request parameters |
 | 401 | Invalid or no credentials passed in the request |
-| 403 | Authorization credentials passed and accepted but account does
-not have permission |
+| 403 | Authorization credentials passed and accepted but account does<br>not have permission |
 | 404 | The requested URI does not exist |
 | 405 | The requested resource does not support the supplied verb |
 | 415 | API does not support the requested content type |
-| 422 | The request is formed correctly, but due to some condition
-the request cannot be processed e.g. email is required and it is not provided
-in the request |
-| 501 | The HTTP method being used has not yet been implemented for
-the requested resource |
+| 422 | The request is formed correctly, but due to some condition<br>the request cannot be processed e.g. email is required and it is not provided<br>in the request |
+| 501 | The HTTP method being used has not yet been implemented for<br>the requested resource |
 | 503 | The service requested is currently unavailable |
 | 0 | An internal error occurred when processing the request |
 
@@ -355,16 +346,12 @@ $result = $messaging->createSendSMS($payload);
 |------------|-------------------|
 | 400 | Invalid or missing request parameters |
 | 401 | Invalid or no credentials passed in the request |
-| 403 | Authorization credentials passed and accepted but account does
-not have permission |
+| 403 | Authorization credentials passed and accepted but account does<br>not have permission |
 | 404 | The requested URI does not exist |
 | 405 | The requested resource does not support the supplied verb |
 | 415 | API does not support the requested content type |
-| 422 | The request is formed correctly, but due to some condition
-the request cannot be processed e.g. email is required and it is not provided
-in the request |
-| 501 | The HTTP method being used has not yet been implemented for
-the requested resource |
+| 422 | The request is formed correctly, but due to some condition<br>the request cannot be processed e.g. email is required and it is not provided<br>in the request |
+| 501 | The HTTP method being used has not yet been implemented for<br>the requested resource |
 | 503 | The service requested is currently unavailable |
 | 0 | An internal error occurred when processing the request |
 
@@ -403,16 +390,12 @@ $result = $messaging->getMMSStatus($messageid);
 |------------|-------------------|
 | 400 | Invalid or missing request parameters |
 | 401 | Invalid or no credentials passed in the request |
-| 403 | Authorization credentials passed and accepted but account does
-not have permission |
+| 403 | Authorization credentials passed and accepted but account does<br>not have permission |
 | 404 | The requested URI does not exist |
 | 405 | The requested resource does not support the supplied verb |
 | 415 | API does not support the requested content type |
-| 422 | The request is formed correctly, but due to some condition
-the request cannot be processed e.g. email is required and it is not provided
-in the request |
-| 501 | The HTTP method being used has not yet been implemented for
-the requested resource |
+| 422 | The request is formed correctly, but due to some condition<br>the request cannot be processed e.g. email is required and it is not provided<br>in the request |
+| 501 | The HTTP method being used has not yet been implemented for<br>the requested resource |
 | 503 | The service requested is currently unavailable |
 | 0 | An internal error occurred when processing the request |
 
@@ -452,444 +435,14 @@ $result = $messaging->createSendMMS($body);
 |------------|-------------------|
 | 400 | Invalid or missing request parameters |
 | 401 | Invalid or no credentials passed in the request |
-| 403 | Authorization credentials passed and accepted but account does
-not have permission |
+| 403 | Authorization credentials passed and accepted but account does<br>not have permission |
 | 404 | The requested URI does not exist |
 | 405 | The requested resource does not support the supplied verb |
 | 415 | API does not support the requested content type |
-| 422 | The request is formed correctly, but due to some condition
-the request cannot be processed e.g. email is required and it is not provided
-in the request |
-| 501 | The HTTP method being used has not yet been implemented for
-the requested resource |
+| 422 | The request is formed correctly, but due to some condition<br>the request cannot be processed e.g. email is required and it is not provided<br>in the request |
+| 501 | The HTTP method being used has not yet been implemented for<br>the requested resource |
 | 503 | The service requested is currently unavailable |
 | 0 | An internal error occurred when processing the request |
-
-
-
-[Back to List of Controllers](#list_of_controllers)
-
-## <a name="o_auth_authorization_controller"></a>![Class: ](https://apidocs.io/img/class.png ".OAuthAuthorizationController") OAuthAuthorizationController
-
-### Get singleton instance
-
-The singleton instance of the ``` OAuthAuthorizationController ``` class can be accessed from the API Client.
-
-```php
-$oAuthAuthorization = $client->getOAuthAuthorization();
-```
-
-### <a name="create_request_token"></a>![Method: ](https://apidocs.io/img/method.png ".OAuthAuthorizationController.createRequestToken") createRequestToken
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-
-```php
-function createRequestToken(
-        $authorization,
-        $scope = null,
-        $fieldParameters = null)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| authorization |  ``` Required ```  | Authorization header in Basic auth format |
-| scope |  ``` Optional ```  | Requested scopes as a space-delimited list. |
-| fieldParameters | ``` Optional ``` | Additional optional form parameters are supported by this method |
-
-
-
-#### Example Usage
-
-```php
-$authorization = 'Authorization';
-$scope = 'scope';
-// key-value map for optional form parameters
-$formParams = array('key' => 'value');
-
-
-$result = $oAuthAuthorization->createRequestToken($authorization, $scope, $formParams);
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 400 | OAuth 2 provider returned an error. |
-| 401 | OAuth 2 provider says client authentication failed. |
-
-
-
-### <a name="create_request_token1"></a>![Method: ](https://apidocs.io/img/method.png ".OAuthAuthorizationController.createRequestToken1") createRequestToken1
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-
-```php
-function createRequestToken1(
-        $authorization,
-        $scope = null,
-        $fieldParameters = null)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| authorization |  ``` Required ```  | Authorization header in Basic auth format |
-| scope |  ``` Optional ```  | Requested scopes as a space-delimited list. |
-| fieldParameters | ``` Optional ``` | Additional optional form parameters are supported by this method |
-
-
-
-#### Example Usage
-
-```php
-$authorization = 'Authorization';
-$scope = 'scope';
-// key-value map for optional form parameters
-$formParams = array('key' => 'value');
-
-
-$result = $oAuthAuthorization->createRequestToken1($authorization, $scope, $formParams);
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 400 | OAuth 2 provider returned an error. |
-| 401 | OAuth 2 provider says client authentication failed. |
-
-
-
-### <a name="create_request_token2"></a>![Method: ](https://apidocs.io/img/method.png ".OAuthAuthorizationController.createRequestToken2") createRequestToken2
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-
-```php
-function createRequestToken2(
-        $authorization,
-        $scope = null,
-        $fieldParameters = null)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| authorization |  ``` Required ```  | Authorization header in Basic auth format |
-| scope |  ``` Optional ```  | Requested scopes as a space-delimited list. |
-| fieldParameters | ``` Optional ``` | Additional optional form parameters are supported by this method |
-
-
-
-#### Example Usage
-
-```php
-$authorization = 'Authorization';
-$scope = 'scope';
-// key-value map for optional form parameters
-$formParams = array('key' => 'value');
-
-
-$result = $oAuthAuthorization->createRequestToken2($authorization, $scope, $formParams);
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 400 | OAuth 2 provider returned an error. |
-| 401 | OAuth 2 provider says client authentication failed. |
-
-
-
-### <a name="create_request_token11"></a>![Method: ](https://apidocs.io/img/method.png ".OAuthAuthorizationController.createRequestToken11") createRequestToken11
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-
-```php
-function createRequestToken11(
-        $authorization,
-        $scope = null,
-        $fieldParameters = null)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| authorization |  ``` Required ```  | Authorization header in Basic auth format |
-| scope |  ``` Optional ```  | Requested scopes as a space-delimited list. |
-| fieldParameters | ``` Optional ``` | Additional optional form parameters are supported by this method |
-
-
-
-#### Example Usage
-
-```php
-$authorization = 'Authorization';
-$scope = 'scope';
-// key-value map for optional form parameters
-$formParams = array('key' => 'value');
-
-
-$result = $oAuthAuthorization->createRequestToken11($authorization, $scope, $formParams);
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 400 | OAuth 2 provider returned an error. |
-| 401 | OAuth 2 provider says client authentication failed. |
-
-
-
-### <a name="create_request_token21"></a>![Method: ](https://apidocs.io/img/method.png ".OAuthAuthorizationController.createRequestToken21") createRequestToken21
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-
-```php
-function createRequestToken21(
-        $authorization,
-        $scope = null,
-        $fieldParameters = null)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| authorization |  ``` Required ```  | Authorization header in Basic auth format |
-| scope |  ``` Optional ```  | Requested scopes as a space-delimited list. |
-| fieldParameters | ``` Optional ``` | Additional optional form parameters are supported by this method |
-
-
-
-#### Example Usage
-
-```php
-$authorization = 'Authorization';
-$scope = 'scope';
-// key-value map for optional form parameters
-$formParams = array('key' => 'value');
-
-
-$result = $oAuthAuthorization->createRequestToken21($authorization, $scope, $formParams);
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 400 | OAuth 2 provider returned an error. |
-| 401 | OAuth 2 provider says client authentication failed. |
-
-
-
-### <a name="create_request_token11"></a>![Method: ](https://apidocs.io/img/method.png ".OAuthAuthorizationController.createRequestToken11") createRequestToken11
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-
-```php
-function createRequestToken11(
-        $authorization,
-        $scope = null,
-        $fieldParameters = null)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| authorization |  ``` Required ```  | Authorization header in Basic auth format |
-| scope |  ``` Optional ```  | Requested scopes as a space-delimited list. |
-| fieldParameters | ``` Optional ``` | Additional optional form parameters are supported by this method |
-
-
-
-#### Example Usage
-
-```php
-$authorization = 'Authorization';
-$scope = 'scope';
-// key-value map for optional form parameters
-$formParams = array('key' => 'value');
-
-
-$result = $oAuthAuthorization->createRequestToken11($authorization, $scope, $formParams);
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 400 | OAuth 2 provider returned an error. |
-| 401 | OAuth 2 provider says client authentication failed. |
-
-
-
-### <a name="create_request_token1"></a>![Method: ](https://apidocs.io/img/method.png ".OAuthAuthorizationController.createRequestToken1") createRequestToken1
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-
-```php
-function createRequestToken1(
-        $authorization,
-        $scope = null,
-        $fieldParameters = null)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| authorization |  ``` Required ```  | Authorization header in Basic auth format |
-| scope |  ``` Optional ```  | Requested scopes as a space-delimited list. |
-| fieldParameters | ``` Optional ``` | Additional optional form parameters are supported by this method |
-
-
-
-#### Example Usage
-
-```php
-$authorization = 'Authorization';
-$scope = 'scope';
-// key-value map for optional form parameters
-$formParams = array('key' => 'value');
-
-
-$result = $oAuthAuthorization->createRequestToken1($authorization, $scope, $formParams);
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 400 | OAuth 2 provider returned an error. |
-| 401 | OAuth 2 provider says client authentication failed. |
-
-
-
-### <a name="create_request_token2"></a>![Method: ](https://apidocs.io/img/method.png ".OAuthAuthorizationController.createRequestToken2") createRequestToken2
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-
-```php
-function createRequestToken2(
-        $authorization,
-        $scope = null,
-        $fieldParameters = null)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| authorization |  ``` Required ```  | Authorization header in Basic auth format |
-| scope |  ``` Optional ```  | Requested scopes as a space-delimited list. |
-| fieldParameters | ``` Optional ``` | Additional optional form parameters are supported by this method |
-
-
-
-#### Example Usage
-
-```php
-$authorization = 'Authorization';
-$scope = 'scope';
-// key-value map for optional form parameters
-$formParams = array('key' => 'value');
-
-
-$result = $oAuthAuthorization->createRequestToken2($authorization, $scope, $formParams);
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 400 | OAuth 2 provider returned an error. |
-| 401 | OAuth 2 provider says client authentication failed. |
-
-
-
-### <a name="create_request_token3"></a>![Method: ](https://apidocs.io/img/method.png ".OAuthAuthorizationController.createRequestToken3") createRequestToken3
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-
-```php
-function createRequestToken3(
-        $authorization,
-        $scope = null,
-        $fieldParameters = null)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| authorization |  ``` Required ```  | Authorization header in Basic auth format |
-| scope |  ``` Optional ```  | Requested scopes as a space-delimited list. |
-| fieldParameters | ``` Optional ``` | Additional optional form parameters are supported by this method |
-
-
-
-#### Example Usage
-
-```php
-$authorization = 'Authorization';
-$scope = 'scope';
-// key-value map for optional form parameters
-$formParams = array('key' => 'value');
-
-
-$result = $oAuthAuthorization->createRequestToken3($authorization, $scope, $formParams);
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 400 | OAuth 2 provider returned an error. |
-| 401 | OAuth 2 provider says client authentication failed. |
 
 
 

@@ -178,7 +178,6 @@ TelstraMessagingAPIClient client = new TelstraMessagingAPIClient();
 ## <a name="list_of_controllers"></a>List of Controllers
 
 * [MessagingController](#messaging_controller)
-* [OAuthAuthorizationController](#o_auth_authorization_controller)
 
 ## <a name="messaging_controller"></a>![Class: ](https://apidocs.io/img/class.png "com.telstra.tapi.controllers.MessagingController") MessagingController
 
@@ -231,16 +230,12 @@ messaging.getSMSStatusAsync(messageId, new APICallBack<OutboundPollResponse>() {
 |------------|-------------------|
 | 400 | Invalid or missing request parameters |
 | 401 | Invalid or no credentials passed in the request |
-| 403 | Authorization credentials passed and accepted but account does
-not have permission |
+| 403 | Authorization credentials passed and accepted but account does<br>not have permission |
 | 404 | The requested URI does not exist |
 | 405 | The requested resource does not support the supplied verb |
 | 415 | API does not support the requested content type |
-| 422 | The request is formed correctly, but due to some condition
-the request cannot be processed e.g. email is required and it is not provided
-in the request |
-| 501 | The HTTP method being used has not yet been implemented for
-the requested resource |
+| 422 | The request is formed correctly, but due to some condition<br>the request cannot be processed e.g. email is required and it is not provided<br>in the request |
+| 501 | The HTTP method being used has not yet been implemented for<br>the requested resource |
 | 503 | The service requested is currently unavailable |
 | 0 | An internal error occurred when processing the request |
 
@@ -276,16 +271,12 @@ messaging.retrieveSMSResponsesAsync(new APICallBack<List<InboundPollResponse>>()
 |------------|-------------------|
 | 400 | Invalid or missing request parameters |
 | 401 | Invalid or no credentials passed in the request |
-| 403 | Authorization credentials passed and accepted but account does
-not have permission |
+| 403 | Authorization credentials passed and accepted but account does<br>not have permission |
 | 404 | The requested URI does not exist |
 | 405 | The requested resource does not support the supplied verb |
 | 415 | API does not support the requested content type |
-| 422 | The request is formed correctly, but due to some condition
-the request cannot be processed e.g. email is required and it is not provided
-in the request |
-| 501 | The HTTP method being used has not yet been implemented for
-the requested resource |
+| 422 | The request is formed correctly, but due to some condition<br>the request cannot be processed e.g. email is required and it is not provided<br>in the request |
+| 501 | The HTTP method being used has not yet been implemented for<br>the requested resource |
 | 503 | The service requested is currently unavailable |
 | 0 | An internal error occurred when processing the request |
 
@@ -337,16 +328,12 @@ try {
 |------------|-------------------|
 | 400 | Invalid or missing request parameters |
 | 401 | Invalid or no credentials passed in the request |
-| 403 | Authorization credentials passed and accepted but account does
-not have permission |
+| 403 | Authorization credentials passed and accepted but account does<br>not have permission |
 | 404 | The requested URI does not exist |
 | 405 | The requested resource does not support the supplied verb |
 | 415 | API does not support the requested content type |
-| 422 | The request is formed correctly, but due to some condition
-the request cannot be processed e.g. email is required and it is not provided
-in the request |
-| 501 | The HTTP method being used has not yet been implemented for
-the requested resource |
+| 422 | The request is formed correctly, but due to some condition<br>the request cannot be processed e.g. email is required and it is not provided<br>in the request |
+| 501 | The HTTP method being used has not yet been implemented for<br>the requested resource |
 | 503 | The service requested is currently unavailable |
 | 0 | An internal error occurred when processing the request |
 
@@ -393,16 +380,12 @@ messaging.getMMSStatusAsync(messageid, new APICallBack<OutboundPollResponse>() {
 |------------|-------------------|
 | 400 | Invalid or missing request parameters |
 | 401 | Invalid or no credentials passed in the request |
-| 403 | Authorization credentials passed and accepted but account does
-not have permission |
+| 403 | Authorization credentials passed and accepted but account does<br>not have permission |
 | 404 | The requested URI does not exist |
 | 405 | The requested resource does not support the supplied verb |
 | 415 | API does not support the requested content type |
-| 422 | The request is formed correctly, but due to some condition
-the request cannot be processed e.g. email is required and it is not provided
-in the request |
-| 501 | The HTTP method being used has not yet been implemented for
-the requested resource |
+| 422 | The request is formed correctly, but due to some condition<br>the request cannot be processed e.g. email is required and it is not provided<br>in the request |
+| 501 | The HTTP method being used has not yet been implemented for<br>the requested resource |
 | 503 | The service requested is currently unavailable |
 | 0 | An internal error occurred when processing the request |
 
@@ -454,446 +437,14 @@ try {
 |------------|-------------------|
 | 400 | Invalid or missing request parameters |
 | 401 | Invalid or no credentials passed in the request |
-| 403 | Authorization credentials passed and accepted but account does
-not have permission |
+| 403 | Authorization credentials passed and accepted but account does<br>not have permission |
 | 404 | The requested URI does not exist |
 | 405 | The requested resource does not support the supplied verb |
 | 415 | API does not support the requested content type |
-| 422 | The request is formed correctly, but due to some condition
-the request cannot be processed e.g. email is required and it is not provided
-in the request |
-| 501 | The HTTP method being used has not yet been implemented for
-the requested resource |
+| 422 | The request is formed correctly, but due to some condition<br>the request cannot be processed e.g. email is required and it is not provided<br>in the request |
+| 501 | The HTTP method being used has not yet been implemented for<br>the requested resource |
 | 503 | The service requested is currently unavailable |
 | 0 | An internal error occurred when processing the request |
-
-
-
-[Back to List of Controllers](#list_of_controllers)
-
-## <a name="o_auth_authorization_controller"></a>![Class: ](https://apidocs.io/img/class.png "com.telstra.tapi.controllers.OAuthAuthorizationController") OAuthAuthorizationController
-
-### Get singleton instance
-
-The singleton instance of the ``` OAuthAuthorizationController ``` class can be accessed from the API Client.
-
-```java
-OAuthAuthorizationController oAuthAuthorization = client.getOAuthAuthorization();
-```
-
-### <a name="create_request_token_async"></a>![Method: ](https://apidocs.io/img/method.png "com.telstra.tapi.controllers.OAuthAuthorizationController.createRequestTokenAsync") createRequestTokenAsync
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-
-```java
-void createRequestTokenAsync(
-        final String authorization,
-        final String scope,
-        Map<String, Object> fieldParameters,
-        final APICallBack<OAuthToken> callBack)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| authorization |  ``` Required ```  | Authorization header in Basic auth format |
-| scope |  ``` Optional ```  | Requested scopes as a space-delimited list. |
-| fieldParameters | ``` Optional ``` | Additional optional form parameters are supported by this method |
-
-
-#### Example Usage
-
-```java
-String authorization = "Authorization";
-String scope = "scope";
-// key-value map for optional form parameters
-Map<String, Object> formParams = new LinkedHashMap<String, Object>();
-// Invoking the API call with sample inputs
-oAuthAuthorization.createRequestTokenAsync(authorization, scope, formParams, new APICallBack<OAuthToken>() {
-    public void onSuccess(HttpContext context, OAuthToken response) {
-        // TODO success callback handler
-    }
-    public void onFailure(HttpContext context, Throwable error) {
-        // TODO failure callback handler
-    }
-});
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 400 | OAuth 2 provider returned an error. |
-| 401 | OAuth 2 provider says client authentication failed. |
-
-
-
-### <a name="create_request_token1_async"></a>![Method: ](https://apidocs.io/img/method.png "com.telstra.tapi.controllers.OAuthAuthorizationController.createRequestToken1Async") createRequestToken1Async
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-
-```java
-void createRequestToken1Async(
-        final String authorization,
-        final String scope,
-        Map<String, Object> fieldParameters,
-        final APICallBack<OAuthToken> callBack)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| authorization |  ``` Required ```  | Authorization header in Basic auth format |
-| scope |  ``` Optional ```  | Requested scopes as a space-delimited list. |
-| fieldParameters | ``` Optional ``` | Additional optional form parameters are supported by this method |
-
-
-#### Example Usage
-
-```java
-String authorization = "Authorization";
-String scope = "scope";
-// key-value map for optional form parameters
-Map<String, Object> formParams = new LinkedHashMap<String, Object>();
-// Invoking the API call with sample inputs
-oAuthAuthorization.createRequestToken1Async(authorization, scope, formParams, new APICallBack<OAuthToken>() {
-    public void onSuccess(HttpContext context, OAuthToken response) {
-        // TODO success callback handler
-    }
-    public void onFailure(HttpContext context, Throwable error) {
-        // TODO failure callback handler
-    }
-});
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 400 | OAuth 2 provider returned an error. |
-| 401 | OAuth 2 provider says client authentication failed. |
-
-
-
-### <a name="create_request_token2_async"></a>![Method: ](https://apidocs.io/img/method.png "com.telstra.tapi.controllers.OAuthAuthorizationController.createRequestToken2Async") createRequestToken2Async
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-
-```java
-void createRequestToken2Async(
-        final String authorization,
-        final String scope,
-        Map<String, Object> fieldParameters,
-        final APICallBack<OAuthToken> callBack)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| authorization |  ``` Required ```  | Authorization header in Basic auth format |
-| scope |  ``` Optional ```  | Requested scopes as a space-delimited list. |
-| fieldParameters | ``` Optional ``` | Additional optional form parameters are supported by this method |
-
-
-#### Example Usage
-
-```java
-String authorization = "Authorization";
-String scope = "scope";
-// key-value map for optional form parameters
-Map<String, Object> formParams = new LinkedHashMap<String, Object>();
-// Invoking the API call with sample inputs
-oAuthAuthorization.createRequestToken2Async(authorization, scope, formParams, new APICallBack<OAuthToken>() {
-    public void onSuccess(HttpContext context, OAuthToken response) {
-        // TODO success callback handler
-    }
-    public void onFailure(HttpContext context, Throwable error) {
-        // TODO failure callback handler
-    }
-});
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 400 | OAuth 2 provider returned an error. |
-| 401 | OAuth 2 provider says client authentication failed. |
-
-
-
-### <a name="create_request_token11_async"></a>![Method: ](https://apidocs.io/img/method.png "com.telstra.tapi.controllers.OAuthAuthorizationController.createRequestToken11Async") createRequestToken11Async
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-
-```java
-void createRequestToken11Async(
-        final String authorization,
-        final String scope,
-        Map<String, Object> fieldParameters,
-        final APICallBack<OAuthToken> callBack)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| authorization |  ``` Required ```  | Authorization header in Basic auth format |
-| scope |  ``` Optional ```  | Requested scopes as a space-delimited list. |
-| fieldParameters | ``` Optional ``` | Additional optional form parameters are supported by this method |
-
-
-#### Example Usage
-
-```java
-String authorization = "Authorization";
-String scope = "scope";
-// key-value map for optional form parameters
-Map<String, Object> formParams = new LinkedHashMap<String, Object>();
-// Invoking the API call with sample inputs
-oAuthAuthorization.createRequestToken11Async(authorization, scope, formParams, new APICallBack<OAuthToken>() {
-    public void onSuccess(HttpContext context, OAuthToken response) {
-        // TODO success callback handler
-    }
-    public void onFailure(HttpContext context, Throwable error) {
-        // TODO failure callback handler
-    }
-});
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 400 | OAuth 2 provider returned an error. |
-| 401 | OAuth 2 provider says client authentication failed. |
-
-
-
-### <a name="create_request_token21_async"></a>![Method: ](https://apidocs.io/img/method.png "com.telstra.tapi.controllers.OAuthAuthorizationController.createRequestToken21Async") createRequestToken21Async
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-
-```java
-void createRequestToken21Async(
-        final String authorization,
-        final String scope,
-        Map<String, Object> fieldParameters,
-        final APICallBack<OAuthToken> callBack)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| authorization |  ``` Required ```  | Authorization header in Basic auth format |
-| scope |  ``` Optional ```  | Requested scopes as a space-delimited list. |
-| fieldParameters | ``` Optional ``` | Additional optional form parameters are supported by this method |
-
-
-#### Example Usage
-
-```java
-String authorization = "Authorization";
-String scope = "scope";
-// key-value map for optional form parameters
-Map<String, Object> formParams = new LinkedHashMap<String, Object>();
-// Invoking the API call with sample inputs
-oAuthAuthorization.createRequestToken21Async(authorization, scope, formParams, new APICallBack<OAuthToken>() {
-    public void onSuccess(HttpContext context, OAuthToken response) {
-        // TODO success callback handler
-    }
-    public void onFailure(HttpContext context, Throwable error) {
-        // TODO failure callback handler
-    }
-});
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 400 | OAuth 2 provider returned an error. |
-| 401 | OAuth 2 provider says client authentication failed. |
-
-
-
-### <a name="create_request_token1_async"></a>![Method: ](https://apidocs.io/img/method.png "com.telstra.tapi.controllers.OAuthAuthorizationController.createRequestToken1Async") createRequestToken1Async
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-
-```java
-void createRequestToken1Async(
-        final String authorization,
-        final String scope,
-        Map<String, Object> fieldParameters,
-        final APICallBack<OAuthToken> callBack)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| authorization |  ``` Required ```  | Authorization header in Basic auth format |
-| scope |  ``` Optional ```  | Requested scopes as a space-delimited list. |
-| fieldParameters | ``` Optional ``` | Additional optional form parameters are supported by this method |
-
-
-#### Example Usage
-
-```java
-String authorization = "Authorization";
-String scope = "scope";
-// key-value map for optional form parameters
-Map<String, Object> formParams = new LinkedHashMap<String, Object>();
-// Invoking the API call with sample inputs
-oAuthAuthorization.createRequestToken1Async(authorization, scope, formParams, new APICallBack<OAuthToken>() {
-    public void onSuccess(HttpContext context, OAuthToken response) {
-        // TODO success callback handler
-    }
-    public void onFailure(HttpContext context, Throwable error) {
-        // TODO failure callback handler
-    }
-});
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 400 | OAuth 2 provider returned an error. |
-| 401 | OAuth 2 provider says client authentication failed. |
-
-
-
-### <a name="create_request_token_async"></a>![Method: ](https://apidocs.io/img/method.png "com.telstra.tapi.controllers.OAuthAuthorizationController.createRequestTokenAsync") createRequestTokenAsync
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-
-```java
-void createRequestTokenAsync(
-        final String authorization,
-        final String scope,
-        Map<String, Object> fieldParameters,
-        final APICallBack<OAuthToken> callBack)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| authorization |  ``` Required ```  | Authorization header in Basic auth format |
-| scope |  ``` Optional ```  | Requested scopes as a space-delimited list. |
-| fieldParameters | ``` Optional ``` | Additional optional form parameters are supported by this method |
-
-
-#### Example Usage
-
-```java
-String authorization = "Authorization";
-String scope = "scope";
-// key-value map for optional form parameters
-Map<String, Object> formParams = new LinkedHashMap<String, Object>();
-// Invoking the API call with sample inputs
-oAuthAuthorization.createRequestTokenAsync(authorization, scope, formParams, new APICallBack<OAuthToken>() {
-    public void onSuccess(HttpContext context, OAuthToken response) {
-        // TODO success callback handler
-    }
-    public void onFailure(HttpContext context, Throwable error) {
-        // TODO failure callback handler
-    }
-});
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 400 | OAuth 2 provider returned an error. |
-| 401 | OAuth 2 provider says client authentication failed. |
-
-
-
-### <a name="create_request_token_async"></a>![Method: ](https://apidocs.io/img/method.png "com.telstra.tapi.controllers.OAuthAuthorizationController.createRequestTokenAsync") createRequestTokenAsync
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-
-```java
-void createRequestTokenAsync(
-        final String authorization,
-        final String scope,
-        Map<String, Object> fieldParameters,
-        final APICallBack<OAuthToken> callBack)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| authorization |  ``` Required ```  | Authorization header in Basic auth format |
-| scope |  ``` Optional ```  | Requested scopes as a space-delimited list. |
-| fieldParameters | ``` Optional ``` | Additional optional form parameters are supported by this method |
-
-
-#### Example Usage
-
-```java
-String authorization = "Authorization";
-String scope = "scope";
-// key-value map for optional form parameters
-Map<String, Object> formParams = new LinkedHashMap<String, Object>();
-// Invoking the API call with sample inputs
-oAuthAuthorization.createRequestTokenAsync(authorization, scope, formParams, new APICallBack<OAuthToken>() {
-    public void onSuccess(HttpContext context, OAuthToken response) {
-        // TODO success callback handler
-    }
-    public void onFailure(HttpContext context, Throwable error) {
-        // TODO failure callback handler
-    }
-});
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 400 | OAuth 2 provider returned an error. |
-| 401 | OAuth 2 provider says client authentication failed. |
 
 
 

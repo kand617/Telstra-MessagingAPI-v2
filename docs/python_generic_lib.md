@@ -200,7 +200,6 @@ else:
 ## <a name="list_of_controllers"></a>List of Controllers
 
 * [MessagingController](#messaging_controller)
-* [OAuthAuthorizationController](#o_auth_authorization_controller)
 
 ## <a name="messaging_controller"></a>![Class: ](https://apidocs.io/img/class.png ".MessagingController") MessagingController
 
@@ -245,16 +244,12 @@ result = messaging_client.get_sms_status(message_id)
 |------------|-------------------|
 | 400 | Invalid or missing request parameters |
 | 401 | Invalid or no credentials passed in the request |
-| 403 | Authorization credentials passed and accepted but account does
-not have permission |
+| 403 | Authorization credentials passed and accepted but account does<br>not have permission |
 | 404 | The requested URI does not exist |
 | 405 | The requested resource does not support the supplied verb |
 | 415 | API does not support the requested content type |
-| 422 | The request is formed correctly, but due to some condition
-the request cannot be processed e.g. email is required and it is not provided
-in the request |
-| 501 | The HTTP method being used has not yet been implemented for
-the requested resource |
+| 422 | The request is formed correctly, but due to some condition<br>the request cannot be processed e.g. email is required and it is not provided<br>in the request |
+| 501 | The HTTP method being used has not yet been implemented for<br>the requested resource |
 | 503 | The service requested is currently unavailable |
 | 0 | An internal error occurred when processing the request |
 
@@ -283,16 +278,12 @@ result = messaging_client.retrieve_sms_responses()
 |------------|-------------------|
 | 400 | Invalid or missing request parameters |
 | 401 | Invalid or no credentials passed in the request |
-| 403 | Authorization credentials passed and accepted but account does
-not have permission |
+| 403 | Authorization credentials passed and accepted but account does<br>not have permission |
 | 404 | The requested URI does not exist |
 | 405 | The requested resource does not support the supplied verb |
 | 415 | API does not support the requested content type |
-| 422 | The request is formed correctly, but due to some condition
-the request cannot be processed e.g. email is required and it is not provided
-in the request |
-| 501 | The HTTP method being used has not yet been implemented for
-the requested resource |
+| 422 | The request is formed correctly, but due to some condition<br>the request cannot be processed e.g. email is required and it is not provided<br>in the request |
+| 501 | The HTTP method being used has not yet been implemented for<br>the requested resource |
 | 503 | The service requested is currently unavailable |
 | 0 | An internal error occurred when processing the request |
 
@@ -333,16 +324,12 @@ result = messaging_client.create_send_sms(payload)
 |------------|-------------------|
 | 400 | Invalid or missing request parameters |
 | 401 | Invalid or no credentials passed in the request |
-| 403 | Authorization credentials passed and accepted but account does
-not have permission |
+| 403 | Authorization credentials passed and accepted but account does<br>not have permission |
 | 404 | The requested URI does not exist |
 | 405 | The requested resource does not support the supplied verb |
 | 415 | API does not support the requested content type |
-| 422 | The request is formed correctly, but due to some condition
-the request cannot be processed e.g. email is required and it is not provided
-in the request |
-| 501 | The HTTP method being used has not yet been implemented for
-the requested resource |
+| 422 | The request is formed correctly, but due to some condition<br>the request cannot be processed e.g. email is required and it is not provided<br>in the request |
+| 501 | The HTTP method being used has not yet been implemented for<br>the requested resource |
 | 503 | The service requested is currently unavailable |
 | 0 | An internal error occurred when processing the request |
 
@@ -382,16 +369,12 @@ result = messaging_client.get_mms_status(messageid)
 |------------|-------------------|
 | 400 | Invalid or missing request parameters |
 | 401 | Invalid or no credentials passed in the request |
-| 403 | Authorization credentials passed and accepted but account does
-not have permission |
+| 403 | Authorization credentials passed and accepted but account does<br>not have permission |
 | 404 | The requested URI does not exist |
 | 405 | The requested resource does not support the supplied verb |
 | 415 | API does not support the requested content type |
-| 422 | The request is formed correctly, but due to some condition
-the request cannot be processed e.g. email is required and it is not provided
-in the request |
-| 501 | The HTTP method being used has not yet been implemented for
-the requested resource |
+| 422 | The request is formed correctly, but due to some condition<br>the request cannot be processed e.g. email is required and it is not provided<br>in the request |
+| 501 | The HTTP method being used has not yet been implemented for<br>the requested resource |
 | 503 | The service requested is currently unavailable |
 | 0 | An internal error occurred when processing the request |
 
@@ -432,306 +415,14 @@ result = messaging_client.create_send_mms(body)
 |------------|-------------------|
 | 400 | Invalid or missing request parameters |
 | 401 | Invalid or no credentials passed in the request |
-| 403 | Authorization credentials passed and accepted but account does
-not have permission |
+| 403 | Authorization credentials passed and accepted but account does<br>not have permission |
 | 404 | The requested URI does not exist |
 | 405 | The requested resource does not support the supplied verb |
 | 415 | API does not support the requested content type |
-| 422 | The request is formed correctly, but due to some condition
-the request cannot be processed e.g. email is required and it is not provided
-in the request |
-| 501 | The HTTP method being used has not yet been implemented for
-the requested resource |
+| 422 | The request is formed correctly, but due to some condition<br>the request cannot be processed e.g. email is required and it is not provided<br>in the request |
+| 501 | The HTTP method being used has not yet been implemented for<br>the requested resource |
 | 503 | The service requested is currently unavailable |
 | 0 | An internal error occurred when processing the request |
-
-
-
-
-[Back to List of Controllers](#list_of_controllers)
-
-## <a name="o_auth_authorization_controller"></a>![Class: ](https://apidocs.io/img/class.png ".OAuthAuthorizationController") OAuthAuthorizationController
-
-### Get controller instance
-
-An instance of the ``` OAuthAuthorizationController ``` class can be accessed from the API Client.
-
-```python
- o_auth_authorization_client = client.o_auth_authorization
-```
-
-### <a name="create_request_token"></a>![Method: ](https://apidocs.io/img/method.png ".OAuthAuthorizationController.create_request_token") create_request_token
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-```python
-def create_request_token(self,
-                             authorization,
-                             scope=None,
-                             _optional_form_parameters=None)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| authorization |  ``` Required ```  | Authorization header in Basic auth format |
-| scope |  ``` Optional ```  | Requested scopes as a space-delimited list. |
-| _optional_form_parameters | ``` Optional ``` | Additional optional form parameters are supported by this method |
-
-
-
-#### Example Usage
-
-```python
-authorization = 'Authorization'
-scope = 'scope'
-# key-value map for optional form parameters
-optional_form_parameters = { }
-
-
-result = o_auth_authorization_client.create_request_token(authorization, scope, optional_form_parameters)
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 400 | OAuth 2 provider returned an error. |
-| 401 | OAuth 2 provider says client authentication failed. |
-
-
-
-
-### <a name="create_request_token_1"></a>![Method: ](https://apidocs.io/img/method.png ".OAuthAuthorizationController.create_request_token_1") create_request_token_1
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-```python
-def create_request_token_1(self,
-                               authorization,
-                               scope=None,
-                               _optional_form_parameters=None)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| authorization |  ``` Required ```  | Authorization header in Basic auth format |
-| scope |  ``` Optional ```  | Requested scopes as a space-delimited list. |
-| _optional_form_parameters | ``` Optional ``` | Additional optional form parameters are supported by this method |
-
-
-
-#### Example Usage
-
-```python
-authorization = 'Authorization'
-scope = 'scope'
-# key-value map for optional form parameters
-optional_form_parameters = { }
-
-
-result = o_auth_authorization_client.create_request_token_1(authorization, scope, optional_form_parameters)
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 400 | OAuth 2 provider returned an error. |
-| 401 | OAuth 2 provider says client authentication failed. |
-
-
-
-
-### <a name="create_request_token_2"></a>![Method: ](https://apidocs.io/img/method.png ".OAuthAuthorizationController.create_request_token_2") create_request_token_2
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-```python
-def create_request_token_2(self,
-                               authorization,
-                               scope=None,
-                               _optional_form_parameters=None)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| authorization |  ``` Required ```  | Authorization header in Basic auth format |
-| scope |  ``` Optional ```  | Requested scopes as a space-delimited list. |
-| _optional_form_parameters | ``` Optional ``` | Additional optional form parameters are supported by this method |
-
-
-
-#### Example Usage
-
-```python
-authorization = 'Authorization'
-scope = 'scope'
-# key-value map for optional form parameters
-optional_form_parameters = { }
-
-
-result = o_auth_authorization_client.create_request_token_2(authorization, scope, optional_form_parameters)
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 400 | OAuth 2 provider returned an error. |
-| 401 | OAuth 2 provider says client authentication failed. |
-
-
-
-
-### <a name="create_request_token_11"></a>![Method: ](https://apidocs.io/img/method.png ".OAuthAuthorizationController.create_request_token_11") create_request_token_11
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-```python
-def create_request_token_11(self,
-                                authorization,
-                                scope=None,
-                                _optional_form_parameters=None)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| authorization |  ``` Required ```  | Authorization header in Basic auth format |
-| scope |  ``` Optional ```  | Requested scopes as a space-delimited list. |
-| _optional_form_parameters | ``` Optional ``` | Additional optional form parameters are supported by this method |
-
-
-
-#### Example Usage
-
-```python
-authorization = 'Authorization'
-scope = 'scope'
-# key-value map for optional form parameters
-optional_form_parameters = { }
-
-
-result = o_auth_authorization_client.create_request_token_11(authorization, scope, optional_form_parameters)
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 400 | OAuth 2 provider returned an error. |
-| 401 | OAuth 2 provider says client authentication failed. |
-
-
-
-
-### <a name="create_request_token_21"></a>![Method: ](https://apidocs.io/img/method.png ".OAuthAuthorizationController.create_request_token_21") create_request_token_21
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-```python
-def create_request_token_21(self,
-                                authorization,
-                                scope=None,
-                                _optional_form_parameters=None)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| authorization |  ``` Required ```  | Authorization header in Basic auth format |
-| scope |  ``` Optional ```  | Requested scopes as a space-delimited list. |
-| _optional_form_parameters | ``` Optional ``` | Additional optional form parameters are supported by this method |
-
-
-
-#### Example Usage
-
-```python
-authorization = 'Authorization'
-scope = 'scope'
-# key-value map for optional form parameters
-optional_form_parameters = { }
-
-
-result = o_auth_authorization_client.create_request_token_21(authorization, scope, optional_form_parameters)
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 400 | OAuth 2 provider returned an error. |
-| 401 | OAuth 2 provider says client authentication failed. |
-
-
-
-
-### <a name="create_request_token_1"></a>![Method: ](https://apidocs.io/img/method.png ".OAuthAuthorizationController.create_request_token_1") create_request_token_1
-
-> *Tags:*  ``` Skips Authentication ``` 
-
-> Create a new OAuth 2 token.
-
-```python
-def create_request_token_1(self,
-                               authorization,
-                               scope=None,
-                               _optional_form_parameters=None)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| authorization |  ``` Required ```  | Authorization header in Basic auth format |
-| scope |  ``` Optional ```  | Requested scopes as a space-delimited list. |
-| _optional_form_parameters | ``` Optional ``` | Additional optional form parameters are supported by this method |
-
-
-
-#### Example Usage
-
-```python
-authorization = 'Authorization'
-scope = 'scope'
-# key-value map for optional form parameters
-optional_form_parameters = { }
-
-
-result = o_auth_authorization_client.create_request_token_1(authorization, scope, optional_form_parameters)
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 400 | OAuth 2 provider returned an error. |
-| 401 | OAuth 2 provider says client authentication failed. |
 
 
 
