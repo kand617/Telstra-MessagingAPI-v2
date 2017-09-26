@@ -105,10 +105,10 @@ Import the reference to the generated SDK files inside your html file like:
 
     <!-- Models -->
     <script src="scripts/TelstraMessagingAPILib/Models/BaseModel.js"></script>
-    <script src="scripts/TelstraMessagingAPILib/Models/MessageTypeEnum.js"></script>
     <script src="scripts/TelstraMessagingAPILib/Models/MessageSentResponse.js"></script>
     <script src="scripts/TelstraMessagingAPILib/Models/OutboundPollResponse.js"></script>
     <script src="scripts/TelstraMessagingAPILib/Models/StatusEnum.js"></script>
+    <script src="scripts/TelstraMessagingAPILib/Models/MessageTypeEnum.js"></script>
     <script src="scripts/TelstraMessagingAPILib/Models/Message.js"></script>
     <script src="scripts/TelstraMessagingAPILib/Models/SendSMSRequest.js"></script>
     <script src="scripts/TelstraMessagingAPILib/Models/SendMMSRequest.js"></script>
@@ -318,10 +318,10 @@ app.controller('oauthClientController', function($scope, OAuthManager, Configura
 
     <!-- Models -->
     <script src="scripts/TelstraMessagingAPILib/Models/BaseModel.js"></script>
-    <script src="scripts/TelstraMessagingAPILib/Models/MessageTypeEnum.js"></script>
     <script src="scripts/TelstraMessagingAPILib/Models/MessageSentResponse.js"></script>
     <script src="scripts/TelstraMessagingAPILib/Models/OutboundPollResponse.js"></script>
     <script src="scripts/TelstraMessagingAPILib/Models/StatusEnum.js"></script>
+    <script src="scripts/TelstraMessagingAPILib/Models/MessageTypeEnum.js"></script>
     <script src="scripts/TelstraMessagingAPILib/Models/Message.js"></script>
     <script src="scripts/TelstraMessagingAPILib/Models/SendSMSRequest.js"></script>
     <script src="scripts/TelstraMessagingAPILib/Models/SendMMSRequest.js"></script>
